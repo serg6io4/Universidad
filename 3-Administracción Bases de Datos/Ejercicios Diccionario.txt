@@ -1,0 +1,24 @@
+1.Muestre el nombre y el tipo de los atributos de la tabla ALUMNOS del usuario DOCENCIA
+SELECT COLUMN_NAME, DATA_TYPE FROM  ALL_TAB_COLUMNS WHERE OWNER='DOCENCIA' AND TABLE_NAME='ALUMNOS';
+2.Listar el nombre y tipo de todos los objetos del usuario conectado
+SELECT object_name, object_type FROM user_objects
+3.Mostrar los roles que el usuario tienen actualmente activados
+SELECT * from session_roles;
+4.Listar los privilegios de sistema asignados al usuario conectado
+SELECT PRIVILEGE FROM USER_SYS_PRIVS;
+5.Listar los nombres de restricciones foráneas a tablas del mismo esquema que tiene el usuario DOCENCIA
+SELECT CONSTRAINT_NAME FROM ALL_CONSTRAINTS WHERE OWNER='DOCENCIA' AND CONSTRAINT_TYPE='R';
+6.Lista, ordenado por el nombre de tabla todas las columnas, su tipo y su longitud del esquema DOCENCIA
+SELECT TABLE_NAME, COLUMN_NAME, DATA_TYPE, DATA_LENGTH FROM ALL_TAB_COLUMNS WHERE OWNER='DOCENCIA' ORDER BY TABLE_NAME;
+7.Listar el nombre de las vistas que a su vez dependen de otras vistas. Mostrar también el nombre de esas otras vistas de las que dependen.
+SELECT * FROM ALL_dependencies where type=referenced_type and type='VIEW';
+8.Listar el nombre de todas las vistas de usuarios que comiencen por UBD y que son INVALIDAS
+select object_name from ALL_OBJECTS WHERE STATUS='INVALID' AND object_type='VIEW'and owner like 'UBD%'
+9.Listar las Integridad referencial de las tablas del esquema DOCENCIA. Es decir, listar el nombre de la tabla, columna y nombre de la restricción foránea.
+select A.table_name, A.column_name, A.constraint_name 
+       from all_cons_columns A, all_constraints B 
+       where A.table_name = B.table_name and B.constraint_type = 'R' AND A.owner='DOCENCIA';
+10.Seleccionar todas las vistas del usuario DOCENCIA basadas en una consulta larga (más de 150 caracteres).
+select v.view_name,  v.text_length from all_views v, all_objects o where v.owner='DOCENCIA' and TEXT_LENGTH>150 and o.OBJECT_NAME=v.view_name;
+11.Mostrar todos los índices marcados como únicos (UNIQUENESS='UNIQUE') del usuario DOCENCIA junto al número de columnas que lo forman.
+select AIC.index_name, count(AIC.COLUMN_NAME) from all_ind_columns AIC INNER JOIN ALL_INDEXES AI ON AI.INDEX_NAME=AIC.INDEX_NAME where AIC.index_owner='DOCENCIA' and ai.uniqueness='UNIQUE' GROUP BY AIC.index_name;

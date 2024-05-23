@@ -1,0 +1,58 @@
+--Sergio Camacho Marín 
+--0619751866@uma.es
+--3A
+CREATE TABLE tabla_amigo (
+ nombre VARCHAR2(64) NOT NULL,
+ telefono VARCHAR2(32) NOT NULL,
+ borrado CHAR(1) DEFAULT 'N' not null);
+ 
+ CREATE VIEW amigo AS SELECT nombre , telefono FROM tabla_amigo WHERE borrado = 'N';
+ 
+ CREATE OR REPLACE TRIGGER TR_BORRA_AMIGO 
+ INSTEAD OF DELETE ON AMIGO
+ FOR EACH ROW
+ BEGIN
+ --tengo que establecer como S lo que estaba N pero como no hay clave primaria me tengo que guiar por el nombre y el telefono
+ UPDATE TABLA_AMIGO SET BORRADO = 'S' WHERE UPPER(NOMBRE) = UPPER(:OLD.NOMBRE) AND TELEFONO = :OLD.TELEFONO;
+ END TR_BORRA_AMIGO;
+ 
+ --ejercicio 2
+ 
+ CREATE PACKAGE  PAQ_RENOMBRA AS
+ PROCEDURE RENOMBRA_FK(NOMBRE VARCHAR2, CLAVEFK VARCHAR2, NUEVONOMBRE VARCHAR2);
+ FUNCTION NUEVO_NOMBRE_FK(ORIGEN VARCHAR2, DESTINO VARCHAR2)RETURN VARCHAR2;
+ PROCEDURE RENOMBRA_TODAS_FK;
+ END PAQ_RENOMBRA;
+ 
+ CREATE PACKAGE BODY PAQ_RENOMBRA AS
+ 
+ PROCEDURE RENOMBRA_FK(NOMBRE VARCHAR2, CLAVEFK VARCHAR2, NUEVONOMBRE VARCHAR2)AS
+ BEGIN
+ --utilizo execute immediate debido a que la sentencia es ddl y solo se puede realizar de esta manera.
+ EXECUTE IMMEDIATE'ALTER TABLE'|| NOMBRE || 'RENAME CONSTRAINT' || CLAVEFK || 'TO' || NUEVONOMBRE;
+ END RENOMBRA;
+ 
+ FUNCTION NUEVO_NOMBRE_FK(ORIGEN VARCHAR2, DESTINO VARCHAR2)
+ RETURN VARCHAR2 IS
+ RESULTADO VARCHAR2(200);
+ BEGIN
+ --concateno lo que me pasan y lo devuelvo
+ RESULTADO := 'FK'||ORIGEN||DESTINO;
+ RETURN RESULTADO;
+ END NUEVO_NOMBRE_FK;
+ 
+ PROCEDURE RENOMBRA_TODAS_FK AS
+ CURSOR CLAVES IS(SELECT * FROM USER_CONS_COLUMNS WHERE CONSTRAINT_NAME LIKE 'FK%');
+ NUEVO VARCHAR2(200);
+ NOMBRETABLA VARCHAR2(200);
+ BEGIN
+     FOR CLAVE IN CLAVES LOOP
+     --Aquí encuentro  quién lo ha hecho, el nombre antiguo, la tabla a la que pertenece(origen) y la columna de la tabla a la que referencia.
+     --primero busco la tabla, para crear el nombre con la function y luego la renombro.
+        NOMBRETABLA := SELECT TABLE_NAME FROM ALL_TAB_COLUMNS WHERE COLUMN_NAME = CLAVE.COLUMN_NAME;--da error porque puede devolver más de una fila, pero no sé como arreglarlo y me he bloqueado.
+        NUEVO:= NUEVO_NOMBRE_FK(CLAVE.TABLE_NAME, NOMBRETABLA);
+        RENOMBRA_FK(CLAVE.TABLE_NAME, CLAVE.CONSTRAINT_NAME, NUEVO);
+     END LOOP;
+ END RENOMBRA_TODAS_FK;
+ 
+ END PAQ_RENOMBRA;

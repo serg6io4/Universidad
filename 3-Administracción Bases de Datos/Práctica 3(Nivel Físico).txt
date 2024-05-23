@@ -1,0 +1,48 @@
+---SYSTEM---
+create or replace directory directorio_ext as 'C:\Users\app\alumnos\Oracle';
+grant read, write on directory directorio_ext to autoracle;
+grant create public synonym to autoracle;
+
+
+---autoracle---
+create table cliente_externo
+        ( cliente_id varchar2(3),
+          apellido varchar2(50),
+          nombre varchar2(50),
+          dni varchar2(9),
+          usuario varchar2(20),
+         email varchar2(100),
+         direccion varchar2(100),
+         codigo_postal number(5)
+        )
+        organization external
+       ( default directory directorio_ext
+         access parameters
+         ( records delimited by newline
+           fields terminated by ','
+         )
+         location ('clientes.txt')  
+     );
+select * from cliente_externo;
+INSERT INTO CLIENTE SELECT cliente_id, null, nombre, apellido, null, email FROM CLIENTE_EXTERNO;
+
+create index idx_apellido on cliente(upper(apellido1));
+select * from user_indexes;
+
+create materialized view mv_facturas20 refresh start with sysdate next sysdate+1
+as select  c.idcliente, c.nombre, c.apellido1, c.apellido2, f.idfactura, f.fecemision, sum(p.preciounidadventa) total
+
+from cliente c join factura f on c.idcliente = f.CLIENTE_idcliente join contiene co on co.FACTURA_IDFACTURA=f.IDFACTURA 
+
+join pieza p on co.PIEZA_CODREF=p.CODREF
+
+where extract (year from f.fecemision)=2020
+
+group by c.idcliente, c.nombre, c.apellido1, c.apellido2, f.idfactura, f.fecemision;
+
+select * from mv_facturas20;
+
+create public synonym vm_facturas for mv_facturas20;
+
+
+10-Todo objeto creado permanecerá almacenado en el tablespace por defecto, en este caso TS_AUTORACLE.
