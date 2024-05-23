@@ -1,0 +1,109 @@
+LA 1: 
+
+SELECT CROSSJOIN([Order Date].[calendar].[Year].MEMBERS,
+
+[Product].[Categories].[Category].MEMBERS) ON COLUMNS,
+
+[Customer].[Geography].[Customer].MEMBERS ON ROWS
+
+FROM [NORTHWIND DW]
+
+WHERE [Measures].[Sales Amount]
+
+-------------------------------------------------------------------------
+LA 2: 
+
+SELECT [Order Date].[Year].CHILDREN ON COLUMNS,
+
+NON EMPTY [Customer].[Geography].[Country].MEMBERS AS
+
+CLIENTE * [Supplier].[Geography].[Country].MEMBERS AS PROVEEDOR ON ROWS
+
+FROM [NORTHWIND DW]
+
+WHERE Measures.[Sales Amount];
+
+--------------------------------------------------------------------------
+-- 3. Ventas mensuales por el estado del cliente comparados con los del año anterior
+
+WITH MEMBER Measures.[Previous year] AS
+
+	([Measures].[Sales Amount], PARALLELPERIOD([Order Date].[Calendar].[Month], 12)),
+
+	FORMAT_STRING = '###,##0.00 €'
+
+SELECT {[Measures].[Sales Amount], Measures.[Previous year]} ON COLUMNS,
+
+	NON EMPTY[Customer].[Geography].[State] * [Order Date].[Calendar].[Month] ON ROWS
+
+FROM [Sales]
+--------------------------------------------------------------------------
+-- 4. Crecimiento de ventas mensuales por producto, es decir, el total de ventas 
+
+--  por producto comparado con las ventas del mes anterior
+
+WITH MEMBER Measures.[Previous month] AS
+
+	([Measures].[Sales Amount], PARALLELPERIOD([Order Date].[Calendar].[Month], 1)),
+
+	FORMAT_STRING = '###,##0.00 €'
+
+MEMBER Measures.[Month growth] AS
+
+	[Measures].[Sales Amount] - Measures.[Previous month],
+
+	FORMAT_STRING = '###,##0.00 €'
+
+SELECT {[Measures].[Sales Amount], Measures.[Previous month], Measures.[Month growth]} ON COLUMNS,
+
+	NON EMPTY [Product].[Categories].[Product] * [Order Date].[Calendar].[Month] ON ROWS
+
+FROM [Sales]
+--------------------------------------------------------------------------
+--5
+SELECT [Measures].[Sales Amount] ON COLUMNS,
+
+TOPCOUNT([Employee].[Geography].[Employee], 3, [Measures].[Sales Amount])
+
+ON ROWS
+
+FROM [NORTHWIND DW];
+--------------------------------------------------------------------------
+La 6:
+
+
+SELECT [Measures].[Sales Amount] ON COLUMNS , NON EMPTY GENERATE(
+
+{[Product].[Categories].[Product].MEMBERS
+
+* [Order Date].[Calendar].[Year].MEMBERS },
+
+([Product].[Categories].CURRENTMEMBER , [Order Date].[Calendar].CURRENTMEMBER)
+
+* TOPCOUNT([Employee].[Geography].[Employee].MEMBERS,1, [Measures].[Sales
+
+Amount]))ON ROWS
+
+FROM [NORTHWIND DW];
+
+--------------------------------------------------------------------------
+La 7 
+
+
+WITH MEMBER [Measures].media AS (AVG (DESCENDANTS([Order
+
+Date].[calendar].[Year],[Order Date].[calendar].[Month]), [Measures].[Sales Amount]))
+
+SELECT {[Measures].media,[Measures].[Sales Amount]} ON COLUMNS,
+
+NON EMPTY [Order Date].[calendar].[Year].MEMBERS *
+
+[Employee].[Geography].[Employee].MEMBERS ON ROWS
+
+FROM [NORTHWIND DW];
+
+
+
+
+
+

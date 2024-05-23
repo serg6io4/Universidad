@@ -1,0 +1,35 @@
+-- Ranking de los productos vendidos por año, para cada empleado de estados unidos
+
+SELECT P.ProductName, CONCAT(E.FirstName, ' ', E.LastName) Empleado, T.Year, SUM(S.SalesAmount) Ventas,
+ROW_NUMBER() OVER(PARTITION BY CONCAT(E.FirstName, ' ', E.LastName) Empleado, T.Year ORDER BY SUM(S.SalesAmount) DESC)as Ranking
+FROM Product P, Sales S, Employee E, Time T
+WHERE P.ProductKey = S.ProductKey AND S.EmployeeKey = E.EmployeeKey AND E.Country = 'USA' AND S.OrderDateKey = T.TimeKey
+GROUP BY P.ProductName, CONCAT(E.FirstName, ' ', E.LastName), T.Year
+ORDER BY SUM(S.SalesAmount) DESC;
+
+-- Ventas de cada producto por los empleados de estados unidos comparada con la máxima venta de ese producto
+
+SELECT P.ProductName, CONCAT(E.FirstName, ' ', E.LastName) Empleado, SUM(S.SalesAmount) Ventas,
+	MAX(SUM(S.SalesAmount)) OVER (PARTITION BY P.ProductName) MaximoVentas
+FROM Product P, Sales S, Employee E
+WHERE P.ProductKey = S.ProductKey AND S.EmployeeKey = E.EmployeeKey AND E.Country = 'USA'
+GROUP BY P.ProductName, CONCAT(E.FirstName, ' ', E.LastName)
+ORDER BY P.ProductName;
+
+-- Los 5 mejores clientes
+
+SELECT TOP 5 C.CompanyName, SUM(S.SalesAmount) Ventas
+FROM Sales S, Customer C
+WHERE S.CustomerKey = C.CustomerKey
+GROUP BY C.CompanyName
+ORDER BY SUM(S.SalesAmount) DESC;
+
+-- El mejor cliente por pais y año
+SELECT Cu.CompanyName Cliente, Co.CountryName Pais, T.Year, SUM(S.SalesAmount) TotalCompras,
+ MAX(SUM(S.SalesAmount)) OVER (PARTITION BY Co.CountryName,T.Year ORDER BY SUM(S.SalesAmount) DESC )MaximaCompras
+FROM Sales S, Costumer Cu, City Ci, Time T, Country Co, State st
+WHERE S.CostumerKey=Cu.CustomerKey AND Cu.CityKey = Ci.CityKey AND Ci.StateKey = st.StateKey AND
+st.CountryKey= Co.CountryKey AND S.OrderDateKey = T.TimeKey
+GROUP BY Cu.CompanyName Cliente, Co.CountryName, T.Year
+ORDER BY Co.CountryName, T.Year, SUM(S.SalesAmount) DESC
+
