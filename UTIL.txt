@@ -1,0 +1,100 @@
+DISPARIDAD
+La distancia en la imagen entre dos puntos correspodientes
+a la izquierda y a la derecha.
+
+IMPORTANTE:
+El valor de disparidad para un cierto punto es inversamente proporcional 
+a la distancia desde la cámara al punto.(la profundidad del punto)
+
+Utilizas la configuracion ideal para triangulizar según a unos valores normales
+cuando ya tienes todos los parámetros, que los obtienes en metro, debes pasarlo
+de la cámara del sensor a la matriz de un ordenador, para que este en píxeles.
+
+IMPORTANTE:
+Dado un error de disparidad,
+el error en profundidad crece cuadráticamente con el valor Z.
+Esto implica que la posición de los puntos más cercanos a la 
+cámara se estimarán con mayor precisión que los puntos más lejanos.
+
+Aumentar la línea base, aumenta la detección de puntos 3D más lejanos.
+
+--------------------------------------------------------------------------------
+Parte Práctica
+--------------------------------------------------------------------------------
+
+# Prepare vector for plotting input
+ X,Y,Z = origin
+ U,V,W = v
+
+ # Set axes limits
+ ax.set_xlim3d(axes_lim[0], axes_lim[1])
+ ax.set_ylim3d(axes_lim[2], axes_lim[3])
+ ax.set_zlim3d(axes_lim[4], axes_lim[5])
+ 
+ # Add axis labels and aspect ratio
+ ax.set_xlabel('X')
+ ax.set_ylabel('Y')
+ ax.set_zlabel('Z')
+ #ax.set_aspect('equal')
+ 
+ # Plot vectors
+ ax.quiver(X,Y,Z,U,V,W,color=color)
+ 
+ # Add labels
+ for i in range(len(labels)):
+ ax.text(U[i]+X[i], V[i]+Y[i], W[i]+Z[i], labels[i], fontsize=12, color=color)
+
+
+TRANSFORMACIÓN EUCLÍDEA(SE VE GIRADA PERO DENTRO DEL MARCO)
+M = np.array([[cos(theta),-sin(theta),400],
+		[sin(theta), cos(theta), 100],
+		[0,0,1]], dtype=np.float64)
+
+TRANSFORMACIÓN SIMILARIDAD(SE VE CON LA ESQUINA QUE SOBREPASAN)
+M = np.array([[scale*cos(theta),-scale*sin(theta),scale*300],
+ [scale*sin(theta), scale*cos(theta), -scale*50],[0,0,1]]
+ , dtype=np.float64)
+
+TRANSFORMACION AFÍN(SE VE LA IMAGEN COMO EN EL SUELO UN POCO ROMBO)
+M = np.array([[s_x*cos(theta), -s_x*sin(theta),450],[s_y*sin(theta), s_y*cos(theta),400],[0
+
+TRANSFORMACIÓN PROYECTIVA(SE VE UN TRAPECIO INVERTIDO)
+transformed = cv2.warpPerspective(image, M, (3100,2100))
+
+-------EL MODELO DE LA CÁMARA---------------
+1-Se realiza un transformación euclídea 3d a 3d y luego se utiliza el modelo pinhole
+para 3d a 2d y por último un homografía para pasar del plano del sensor a la matriz(2d a 2d)
+
+2-ZM=Kf*P0*D*Mw
+
+kf es para pasar del sensor a la imagen(matriz de calibración)
+P0 es para pasar de la cámara al sensor
+D es para pasar del mundo a la camara
+Mw son coordenadas
+
+3-
+La matriz de 
+	|1 0 0 0 |
+	|0 1 0 0 |
+	|0 0 1 0 |
+proyecta un punto 3D en el sistema de la cámara sobre la imagen suponiendo distancia 
+focal de 1.
+
+4- Una homografía 2D se aplica en el modelo de camara cuando pasamos del plano del sensor
+a la matriz de la imagen.
+
+5- cuando queremos rotar sobre z, del mundo a la camara, es esta matriz:
+	|cos -sin 0 |
+	|sin cos  0 |
+	|0    0   1 |
+con respecto a y es esta:
+	|cos 0 sin |
+	|0   1   0 |
+	|-sin 0 cos|
+con respecto a x:
+	|0   0    0 |
+	|0 cos -sin |
+	|0 sin  cos |
+
+
+
