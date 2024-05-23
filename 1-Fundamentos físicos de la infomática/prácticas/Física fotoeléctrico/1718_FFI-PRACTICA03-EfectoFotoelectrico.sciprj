@@ -1,0 +1,201 @@
+SciDAVis 1.0.5 project file
+<scripting-lang>	muParser
+<windows>	3
+<table>
+6943
+<table creation_time="2017-02-11 09:25:44:000" caption_spec="%n%C{ - }%c" name="TABLA01-EFECTO-FOTOELECTRICO" columns="7" rows="4"><comment><![CDATA[]]></comment><column creation_time="2017-02-11 09:25:44:881" caption_spec="%n%C{ - }%c" name="lambda" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[(nanometros)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:881" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:881" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.7800000000000000e+02</row><row type="TypeDouble" index="1" invalid="no">5.4600000000000000e+02</row><row type="TypeDouble" index="2" invalid="no">4.3600000000000000e+02</row><row type="TypeDouble" index="3" invalid="no">4.0500000000000000e+02</row></column><column creation_time="2017-02-11 09:25:44:883" caption_spec="%n%C{ - }%c" name="ulambda" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[(nanometros)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:883" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:883" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e+00</row></column><column creation_time="2017-02-11 09:25:44:884" caption_spec="%n%C{ - }%c" name="f" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[f (Hz)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:884" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:885" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="3">3e8/col(&quot;lambda&quot;)*1e9</formula><row type="TypeDouble" index="0" invalid="no">5.1903114186851206e+14</row><row type="TypeDouble" index="1" invalid="no">5.4945054945054944e+14</row><row type="TypeDouble" index="2" invalid="no">6.8807339449541288e+14</row><row type="TypeDouble" index="3" invalid="no">7.4074074074074075e+14</row></column><column creation_time="2017-02-11 09:25:44:886" caption_spec="%n%C{ - }%c" name="uf" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[u_f (Hz)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:886" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:886" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="yes">0.0000000000000000e+00</row></column><column creation_time="2017-02-11 09:29:41:819" caption_spec="%n%C{ - }%c" name="V" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[(V)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:29:41:819" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:29:41:819" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2017-02-11 09:30:00:126" caption_spec="%n%C{ - }%c" name="Ec,max" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[(J)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:30:00:126" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:30:00:126" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2017-02-11 09:25:44:887" caption_spec="%n%C{ - }%c" name="Ec,max 1" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[(eV)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:887" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:887" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">0.0000000000000000e+00</row></column><column_width column="0">120</column_width><column_width column="1">109</column_width><column_width column="2">76</column_width><column_width column="3">76</column_width><column_width column="4">86</column_width><column_width column="5">120</column_width><column_width column="6">85</column_width></table>
+geometry	572	0	573	381	
+
+</table>
+<note>
+GUIA-PRACTICA03	26/10/2017 16:03:54
+geometry	maximized	active
+WindowLabel		0
+AutoExec	0
+<content>
+1.- TOMA DE DATOS EN EL LABORATORIO
+2.-TABLAS DE DATOS: 
+· RELLENAR: 
+	Columnas: longitud de onda, (lambda);CALCULAR: frecuencia (f);
+	Potencial de frenado (V);CALCULAR: Ec,max en Julios y en eV. 
+	
+3.- GRÁFICAS 
+
+FIGURA01- Ec,max frente a frencuencia f
+· Las gráficas muestran la relación entre la Ec,max y la frecuencia f de la radiación incidente
+· La gráfica de la izquierda muestra la Ec,max en Julios, la de la derecha en electronvoltios
+· La pendiente de las rectas es igual a la constante de planck h, en J·s a la derecha y en eV·s a la izquierda
+
+4.- CÁLCULO FINAL
+· Realizar una regresión de las gráficas anteriores para obtener la constante de plank con su incertidumbre
+	Constante de Plank (J·s):     	     h=( ???? +- ?????);
+	Constante de Plank (eV·s):     	     h=( ???? +- ?????);
+· COMPARAR los resultados obtenidos con el valor conocido (WIKIPEDIA) de la constante h
+· COMENTAR los resultados.
+</content>
+</note>
+<multiLayer>
+FIGURA01-EFECTO-FOTOELECTRICO	2	1	26/10/2017 11:41:23
+geometry	0	0	514	437	
+WindowLabel		0
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	627	584
+Alignement	0	0
+<graph>
+ggeometry	1	2	245	374
+PlotTitle	ENERGÍA CINÉTICA MÁXIMA FRENTE A 	#000000	2
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Frecuencia (Hz)	Energía cinética máxima, <i>E<sub>c</sub><sup>máx</sup></i> ( J·s )			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	9	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	255
+curve	TABLA01-EFECTO-FOTOELECTRICO_f	TABLA01-EFECTO-FOTOELECTRICO_Ec,max	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	3	1
+scale	0	0	3e-19	5e-20	13	1	0	0
+scale	1	0	3e-19	5e-20	8	5	0	0
+scale	2	351000000000000	849000000000000	100000000000000	5	1	0	0
+scale	3	351000000000000	849000000000000	100000000000000	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	2	5
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+<graph>
+ggeometry	249	2	249	374
+PlotTitle	FRECUENCIA DE LA RADIACIÓN INCIDENTE	#000000	1
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Frecuencia (Hz)	Energía cinética máxima, <i>E<sub>c</sub><sup>máx</sup></i> ( eV·s )			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	9	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasFrame	1	#000000
+CanvasBackground	#ffffff	255
+curve	TABLA01-EFECTO-FOTOELECTRICO_f	TABLA01-EFECTO-FOTOELECTRICO_Ec,max 1	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	3	1
+scale	0	0	2	0.2	13	1	0	0
+scale	1	0	2	0.2	8	5	0	0
+scale	2	351000000000000	849000000000000	100000000000000	11	1	0	0
+scale	3	351000000000000	849000000000000	100000000000000	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+</multiLayer>
+<log>
+[26/10/2017 12:13:48	Plot: ''Graph1'']
+Linear Regression fit of dataset: TABLA01-RESISTENCIA_V, using function: A*x+B
+Y standard errors: Associated dataset (TABLA01-RESISTENCIA_u(V))
+From x = 1 to x = 13
+B (y-intercept) = 0 +/- 0,11766968108291
+A (slope) = 1 +/- 0,014824986333222
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[26/10/2017 18:16:30	Plot: ''FIGURA02-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA01-RESISTENCIA_logV, using function: A*x+B
+Y standard errors: Unknown
+From x = -0,186329578191493 to x = 2,3869262414278
+B (y-intercept) = -0,105237656526923 +/- 0,00142531734995573
+A (slope) = 1,0010777236826 +/- 0,000946542945501466
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6,3748384738983e-06
+R^2 = 0,999992847927105
+---------------------------------------------------------------------------------------
+[26/10/2017 18:16:53	Plot: ''FIGURA02-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA02-LAMPARA-FILAMENTO_logV, using function: A*x+B
+Y standard errors: Unknown
+From x = -1,83258146374831 to x = -0,198450938723838
+B (y-intercept) = 5,72325870388981 +/- 0,0357181724386274
+A (slope) = 1,62494774504644 +/- 0,0325791918148731
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,00246158019167352
+R^2 = 0,997194052545971
+---------------------------------------------------------------------------------------
+[26/10/2017 18:18:39	Plot: ''FIGURA01-RELACION-IV'']
+Linear Regression fit of dataset: TABLA02-LAMPARA-FILAMENTO_V, using function: A*x+B
+Y standard errors: Unknown
+From x = 0,16 to x = 0,82
+B (y-intercept) = -40,784071625022 +/- 4,36792372102568
+A (slope) = 294,300427175376 +/- 9,20452891733561
+--------------------------------------------------------------------------------------
+Chi^2/doF = 32,1741638313703
+R^2 = 0,993199266163702
+---------------------------------------------------------------------------------------
+[26/10/2017 18:18:59	Plot: ''FIGURA01-RELACION-IV'']
+Linear Regression fit of dataset: TABLA01-RESISTENCIA_V, using function: A*x+B
+Y standard errors: Unknown
+From x = 0,83 to x = 10,88
+B (y-intercept) = -0,00523675650805274 +/- 0,00249229563229961
+A (slope) = 0,9030723670252 +/- 0,00042537889444864
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2,10481478832376e-05
+R^2 = 0,999998225009695
+---------------------------------------------------------------------------------------
+[26/10/2017 18:28:04	Plot: ''FIGURA04-RELACION-IP'']
+Polynomial fit of dataset: TABLA02-LAMPARA-FILAMENTO_P, using function: a0+a1*x+a2*x^2
+Y standard errors: Unknown
+From x = 0,16 to x = 0,82
+a0  = 7,6290644936321 +/- 2,06000925343039
+a1  = -85,4710650436142 +/- 9,67964468083803
+a2  = 345,311106712994 +/- 9,84568027733867
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,46142233416429
+R^2 = 0,999648832268797
+---------------------------------------------------------------------------------------
+[26/10/2017 18:28:47	Plot: ''FIGURA04-RELACION-IP'']
+Polynomial fit of dataset: TABLA01-RESISTENCIA_P, using function: a0+a1*x+a2*x^2
+Y standard errors: Unknown
+From x = 0,83 to x = 10,88
+a0  = 0,0105610412102461 +/- 0,0211584970656679
+a1  = -0,0137512945513468 +/- 0,0100795798814652
+a2  = 0,903946356346656 +/- 0,000871962875994074
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,000540525602670872
+R^2 = 0,999999701327468
+---------------------------------------------------------------------------------------
+</log>

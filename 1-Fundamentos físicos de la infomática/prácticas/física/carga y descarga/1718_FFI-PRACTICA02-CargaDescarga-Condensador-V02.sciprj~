@@ -1,0 +1,714 @@
+SciDAVis 1.22.0 project file
+<scripting-lang>	muParser
+<windows>	6
+<table>
+18570
+<table creation_time="2017-26-10 12:39:45:000" caption_spec="%n%C{ - }%c" name="TABLA02-DESCARGA" columns="10" rows="15"><comment><![CDATA[]]></comment><column creation_time="2017-02-11 09:18:54:953" caption_spec="%n%C{ - }%c" name="t" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[t (s)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:18:54:953" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:18:54:953" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.7800000000000002e+00</row><row type="TypeDouble" index="1" invalid="no">1.0390000000000001e+01</row><row type="TypeDouble" index="2" invalid="no">1.5740000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">2.0199999999999999e+01</row><row type="TypeDouble" index="4" invalid="no">2.5480000000000000e+01</row><row type="TypeDouble" index="5" invalid="no">3.0440000000000001e+01</row><row type="TypeDouble" index="6" invalid="no">3.5479999999999997e+01</row><row type="TypeDouble" index="7" invalid="no">4.0180000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">4.5530000000000001e+01</row><row type="TypeDouble" index="9" invalid="no">5.0039999999999999e+01</row><row type="TypeDouble" index="10" invalid="no">5.5240000000000002e+01</row><row type="TypeDouble" index="11" invalid="no">6.0840000000000003e+01</row><row type="TypeDouble" index="12" invalid="no">1.0428000000000000e+02</row><row type="TypeDouble" index="13" invalid="no">1.4280000000000001e+02</row><row type="TypeDouble" index="14" invalid="no">1.6825999999999999e+02</row></column><column creation_time="2017-02-11 09:19:31:017" caption_spec="%n%C{ - }%c" name="ut" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[ut (s)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:19:31:017" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:19:31:017" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="11" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="12" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="13" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="14" invalid="no">1.0000000000000000e-02</row></column><column creation_time="2017-26-10 12:39:45:686" caption_spec="%n%C{ - }%c" name="I" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[I (microA)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:686" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:686" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">col(&quot;I&quot;)*1e6</formula><row type="TypeDouble" index="0" invalid="no">7.4199999999999999e+00</row><row type="TypeDouble" index="1" invalid="no">6.8799999999999999e+00</row><row type="TypeDouble" index="2" invalid="no">5.7400000000000002e+00</row><row type="TypeDouble" index="3" invalid="no">4.4800000000000004e+00</row><row type="TypeDouble" index="4" invalid="no">4.2100000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">3.5600000000000001e+00</row><row type="TypeDouble" index="6" invalid="no">3.0499999999999998e+00</row><row type="TypeDouble" index="7" invalid="no">2.6099999999999999e+00</row><row type="TypeDouble" index="8" invalid="no">2.2100000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">1.4199999999999999e+00</row><row type="TypeDouble" index="10" invalid="no">1.6000000000000001e+00</row><row type="TypeDouble" index="11" invalid="no">1.3600000000000001e+00</row><row type="TypeDouble" index="12" invalid="no">2.3999999999999999e-01</row><row type="TypeDouble" index="13" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="14" invalid="no">4.0000000000000001e-02</row></column><column creation_time="2017-26-10 12:39:45:687" caption_spec="%n%C{ - }%c" name="uI" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[uI (A)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:687" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:687" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="11" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="12" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="13" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="14" invalid="no">1.0000000000000000e-02</row></column><column creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="VR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[VR (V)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">7.1399999999999997e+00</row><row type="TypeDouble" index="1" invalid="no">6.1799999999999997e+00</row><row type="TypeDouble" index="2" invalid="no">5.1799999999999997e+00</row><row type="TypeDouble" index="3" invalid="no">4.5000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">3.7700000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">3.2900000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">2.7400000000000002e+00</row><row type="TypeDouble" index="7" invalid="no">2.3500000000000001e+00</row><row type="TypeDouble" index="8" invalid="no">1.4800000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">1.7100000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">1.4299999999999999e+00</row><row type="TypeDouble" index="11" invalid="no">1.2200000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">2.5000000000000000e-01</row><row type="TypeDouble" index="13" invalid="no">8.0000000000000002e-02</row><row type="TypeDouble" index="14" invalid="no">2.0000000000000000e-02</row></column><column creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="uVR" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[uVR (V)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">0.01</formula><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="11" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="12" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="13" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="14" invalid="no">1.0000000000000000e-02</row></column><column creation_time="2017-26-10 12:39:45:689" caption_spec="%n%C{ - }%c" name="R" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[R (Mohm)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:689" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:689" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="3" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">col(&quot;VR&quot;)/col(&quot;I&quot;)</formula><row type="TypeDouble" index="0" invalid="no">9.6226415094339623e-01</row><row type="TypeDouble" index="1" invalid="no">8.9825581395348830e-01</row><row type="TypeDouble" index="2" invalid="no">9.0243902439024382e-01</row><row type="TypeDouble" index="3" invalid="no">1.0044642857142856e+00</row><row type="TypeDouble" index="4" invalid="no">8.9548693586698336e-01</row><row type="TypeDouble" index="5" invalid="no">9.2415730337078650e-01</row><row type="TypeDouble" index="6" invalid="no">8.9836065573770507e-01</row><row type="TypeDouble" index="7" invalid="no">9.0038314176245215e-01</row><row type="TypeDouble" index="8" invalid="no">6.6968325791855199e-01</row><row type="TypeDouble" index="9" invalid="no">1.2042253521126760e+00</row><row type="TypeDouble" index="10" invalid="no">8.9374999999999993e-01</row><row type="TypeDouble" index="11" invalid="no">8.9705882352941169e-01</row><row type="TypeDouble" index="12" invalid="no">1.0416666666666667e+00</row><row type="TypeDouble" index="13" invalid="no">7.9999999999999993e-01</row><row type="TypeDouble" index="14" invalid="no">5.0000000000000000e-01</row></column><column creation_time="2017-26-10 12:39:45:690" caption_spec="%n%C{ - }%c" name="uR" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[uR (Mohm)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:690" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:690" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="2" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">col(&quot;R&quot;)*sqrt((col(&quot;uI&quot;)/col(&quot;I&quot;))^2+(col(&quot;uVR&quot;)/col(&quot;VR&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">1.8703326601671457e-03</row><row type="TypeDouble" index="1" invalid="no">1.9537735914976649e-03</row><row type="TypeDouble" index="2" invalid="no">2.3466816132377112e-03</row><row type="TypeDouble" index="3" invalid="no">3.1637808132953587e-03</row><row type="TypeDouble" index="4" invalid="no">3.1884739084974668e-03</row><row type="TypeDouble" index="5" invalid="no">3.8248347941586590e-03</row><row type="TypeDouble" index="6" invalid="no">4.4074304704152809e-03</row><row type="TypeDouble" index="7" invalid="no">5.1556273684668832e-03</row><row type="TypeDouble" index="8" invalid="no">5.4458205709258340e-03</row><row type="TypeDouble" index="9" invalid="no">1.1023227308871928e-02</row><row type="TypeDouble" index="10" invalid="no">8.3824338800795942e-03</row><row type="TypeDouble" index="11" invalid="no">9.8779164719803459e-03</row><row type="TypeDouble" index="12" invalid="no">6.0165706427650900e-02</row><row type="TypeDouble" index="13" invalid="no">1.2806248474865697e-01</row><row type="TypeDouble" index="14" invalid="no">2.7950849718747373e-01</row></column><column creation_time="2017-26-10 17:49:20:218" caption_spec="%n%C{ - }%c" name="logI" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-26-10 17:49:20:218" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 17:49:20:218" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="3" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">ln(col(&quot;I&quot;))</formula><row type="TypeDouble" index="0" invalid="no">2.0041790571792890e+00</row><row type="TypeDouble" index="1" invalid="no">1.9286186519452522e+00</row><row type="TypeDouble" index="2" invalid="no">1.7474592103314750e+00</row><row type="TypeDouble" index="3" invalid="no">1.4996230464268938e+00</row><row type="TypeDouble" index="4" invalid="no">1.4374626476942900e+00</row><row type="TypeDouble" index="5" invalid="no">1.2697605448639391e+00</row><row type="TypeDouble" index="6" invalid="no">1.1151415906193203e+00</row><row type="TypeDouble" index="7" invalid="no">9.5935022133460202e-01</row><row type="TypeDouble" index="8" invalid="no">7.9299251552966143e-01</row><row type="TypeDouble" index="9" invalid="no">3.5065687161316933e-01</row><row type="TypeDouble" index="10" invalid="no">4.7000362924573563e-01</row><row type="TypeDouble" index="11" invalid="no">3.0748469974796072e-01</row><row type="TypeDouble" index="12" invalid="no">-1.4271163556401458e+00</row><row type="TypeDouble" index="13" invalid="no">-2.3025850929940455e+00</row><row type="TypeDouble" index="14" invalid="no">-3.2188758248682006e+00</row></column><column creation_time="2017-26-10 17:49:14:359" caption_spec="%n%C{ - }%c" name="logVR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-26-10 17:49:14:359" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 17:49:14:359" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="3" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">ln(col(&quot;VR&quot;))</formula><row type="TypeDouble" index="0" invalid="no">1.9657127763514930e+00</row><row type="TypeDouble" index="1" invalid="no">1.8213182714695995e+00</row><row type="TypeDouble" index="2" invalid="no">1.6448050562713916e+00</row><row type="TypeDouble" index="3" invalid="no">1.5040773967762742e+00</row><row type="TypeDouble" index="4" invalid="no">1.3270750014599193e+00</row><row type="TypeDouble" index="5" invalid="no">1.1908875647772805e+00</row><row type="TypeDouble" index="6" invalid="no">1.0079579203999789e+00</row><row type="TypeDouble" index="7" invalid="no">8.5441532815606758e-01</row><row type="TypeDouble" index="8" invalid="no">3.9204208777602367e-01</row><row type="TypeDouble" index="9" invalid="no">5.3649337051456847e-01</row><row type="TypeDouble" index="10" invalid="no">3.5767444427181588e-01</row><row type="TypeDouble" index="11" invalid="no">1.9885085874516517e-01</row><row type="TypeDouble" index="12" invalid="no">-1.3862943611198906e+00</row><row type="TypeDouble" index="13" invalid="no">-2.5257286443082556e+00</row><row type="TypeDouble" index="14" invalid="no">-3.9120230054281460e+00</row></column><column_width column="0">78</column_width><column_width column="1">76</column_width><column_width column="2">76</column_width><column_width column="3">76</column_width><column_width column="4">120</column_width><column_width column="5">120</column_width><column_width column="6">120</column_width><column_width column="7">120</column_width><column_width column="8">86</column_width><column_width column="9">120</column_width></table>
+geometry	0	0	573	382	
+
+</table>
+<table>
+27722
+<table creation_time="2017-02-11 09:25:44:000" caption_spec="%n" name="TABLA01-CARGA" columns="15" rows="15"><comment><![CDATA[]]></comment><column creation_time="2017-02-11 09:25:44:881" caption_spec="%n%C{ - }%c" name="t" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[t (s)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:881" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:881" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">7.3999999999999999e-01</row><row type="TypeDouble" index="1" invalid="no">2.8399999999999999e+00</row><row type="TypeDouble" index="2" invalid="no">5.6799999999999997e+00</row><row type="TypeDouble" index="3" invalid="no">1.0529999999999999e+01</row><row type="TypeDouble" index="4" invalid="no">1.5640000000000001e+01</row><row type="TypeDouble" index="5" invalid="no">2.0440000000000001e+01</row><row type="TypeDouble" index="6" invalid="no">2.5559999999999999e+01</row><row type="TypeDouble" index="7" invalid="no">3.0390000000000001e+01</row><row type="TypeDouble" index="8" invalid="no">3.5039999999999999e+01</row><row type="TypeDouble" index="9" invalid="no">4.6320000000000000e+01</row><row type="TypeDouble" index="10" invalid="no">5.0829999999999998e+01</row><row type="TypeDouble" index="11" invalid="no">6.0539999999999999e+01</row><row type="TypeDouble" index="12" invalid="no">7.0480000000000004e+01</row><row type="TypeDouble" index="13" invalid="no">8.5450000000000003e+01</row><row type="TypeDouble" index="14" invalid="no">1.0036000000000000e+02</row></column><column creation_time="2017-02-11 09:25:44:883" caption_spec="%n%C{ - }%c" name="ut" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[ut (s)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:883" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:883" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="11" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="12" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="13" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="14" invalid="no">1.0000000000000000e-02</row></column><column creation_time="2017-02-11 09:25:44:884" caption_spec="%n%C{ - }%c" name="I" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[I (microA)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:884" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:885" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">col(&quot;I&quot;)*1e6</formula><row type="TypeDouble" index="0" invalid="no">9.3200000000000003e+00</row><row type="TypeDouble" index="1" invalid="no">8.7300000000000004e+00</row><row type="TypeDouble" index="2" invalid="no">7.4699999999999998e+00</row><row type="TypeDouble" index="3" invalid="no">6.7199999999999998e+00</row><row type="TypeDouble" index="4" invalid="no">5.7699999999999996e+00</row><row type="TypeDouble" index="5" invalid="no">4.4400000000000004e+00</row><row type="TypeDouble" index="6" invalid="no">4.2199999999999998e+00</row><row type="TypeDouble" index="7" invalid="no">3.5699999999999998e+00</row><row type="TypeDouble" index="8" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">2.1699999999999999e+00</row><row type="TypeDouble" index="10" invalid="no">1.8600000000000001e+00</row><row type="TypeDouble" index="11" invalid="no">1.3600000000000001e+00</row><row type="TypeDouble" index="12" invalid="no">1.0100000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">6.2000000000000000e-01</row><row type="TypeDouble" index="14" invalid="no">3.9000000000000001e-01</row></column><column creation_time="2017-02-11 09:25:44:886" caption_spec="%n%C{ - }%c" name="uI" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[uI (microA)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:886" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:886" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="11" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="12" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="13" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="14" invalid="no">1.0000000000000000e-02</row></column><column creation_time="2017-02-11 09:29:41:819" caption_spec="%n%C{ - }%c" name="VR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[VR (V)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:29:41:819" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:29:41:819" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">8.3000000000000007e+00</row><row type="TypeDouble" index="1" invalid="no">7.7999999999999998e+00</row><row type="TypeDouble" index="2" invalid="no">7.1399999999999997e+00</row><row type="TypeDouble" index="3" invalid="no">6.0599999999999996e+00</row><row type="TypeDouble" index="4" invalid="no">5.1500000000000004e+00</row><row type="TypeDouble" index="5" invalid="no">4.9100000000000001e+00</row><row type="TypeDouble" index="6" invalid="no">3.8700000000000001e+00</row><row type="TypeDouble" index="7" invalid="no">3.2400000000000002e+00</row><row type="TypeDouble" index="8" invalid="no">2.7400000000000002e+00</row><row type="TypeDouble" index="9" invalid="no">1.9399999999999999e+00</row><row type="TypeDouble" index="10" invalid="no">1.6399999999999999e+00</row><row type="TypeDouble" index="11" invalid="no">1.2000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">8.8000000000000000e-01</row><row type="TypeDouble" index="13" invalid="no">5.4000000000000004e-01</row><row type="TypeDouble" index="14" invalid="no">3.4000000000000002e-01</row></column><column creation_time="2017-02-11 09:30:00:126" caption_spec="%n%C{ - }%c" name="uVR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[uVR (V)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:30:00:126" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:30:00:126" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="11" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="12" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="13" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="14" invalid="no">1.0000000000000000e-02</row></column><column creation_time="2017-09-11 12:06:08:619" caption_spec="%n%C{ - }%c" name="e" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[epsilon (V)]]></comment><input_filter><simple_filter creation_time="2017-09-11 12:06:08:619" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-09-11 12:06:08:619" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="4" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="1" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="2" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="3" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="4" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="5" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="6" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="7" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="8" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="9" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="10" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="11" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="12" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="13" invalid="no">8.6999999999999993e+00</row><row type="TypeDouble" index="14" invalid="no">8.6999999999999993e+00</row></column><column creation_time="2017-09-11 12:06:05:892" caption_spec="%n%C{ - }%c" name="ue" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[uepsilon (V)]]></comment><input_filter><simple_filter creation_time="2017-09-11 12:06:05:892" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-09-11 12:06:05:892" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="4" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="11" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="12" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="13" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="14" invalid="no">1.0000000000000001e-01</row></column><column creation_time="2017-02-11 09:25:44:887" caption_spec="%n%C{ - }%c" name="VC" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[VC (V)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:887" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:887" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">col(&quot;e&quot;)-col(&quot;VR&quot;)</formula><row type="TypeDouble" index="0" invalid="no">3.9999999999999858e-01</row><row type="TypeDouble" index="1" invalid="no">8.9999999999999947e-01</row><row type="TypeDouble" index="2" invalid="no">1.5599999999999996e+00</row><row type="TypeDouble" index="3" invalid="no">2.6399999999999997e+00</row><row type="TypeDouble" index="4" invalid="no">3.5499999999999989e+00</row><row type="TypeDouble" index="5" invalid="no">3.7899999999999991e+00</row><row type="TypeDouble" index="6" invalid="no">4.8299999999999992e+00</row><row type="TypeDouble" index="7" invalid="no">5.4599999999999991e+00</row><row type="TypeDouble" index="8" invalid="no">5.9599999999999991e+00</row><row type="TypeDouble" index="9" invalid="no">6.7599999999999998e+00</row><row type="TypeDouble" index="10" invalid="no">7.0599999999999996e+00</row><row type="TypeDouble" index="11" invalid="no">7.4999999999999991e+00</row><row type="TypeDouble" index="12" invalid="no">7.8199999999999994e+00</row><row type="TypeDouble" index="13" invalid="no">8.1600000000000001e+00</row><row type="TypeDouble" index="14" invalid="no">8.3599999999999994e+00</row></column><column creation_time="2017-02-11 09:25:44:888" caption_spec="%n%C{ - }%c" name="uVC" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[uVC (V)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:888" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:888" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">col(&quot;ue&quot;)+col(&quot;uVR&quot;)</formula><row type="TypeDouble" index="0" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="1" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="2" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="3" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="4" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="5" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="6" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="7" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="8" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="9" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="10" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="11" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="12" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="13" invalid="no">1.1000000000000000e-01</row><row type="TypeDouble" index="14" invalid="no">1.1000000000000000e-01</row></column><column creation_time="2017-02-11 09:25:44:889" caption_spec="%n%C{ - }%c" name="R" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[R (Mohm)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:889" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:889" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="3" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">col(&quot;VR&quot;)/col(&quot;I&quot;)</formula><row type="TypeDouble" index="0" invalid="no">8.9055793991416310e-01</row><row type="TypeDouble" index="1" invalid="no">8.9347079037800681e-01</row><row type="TypeDouble" index="2" invalid="no">9.5582329317269077e-01</row><row type="TypeDouble" index="3" invalid="no">9.0178571428571430e-01</row><row type="TypeDouble" index="4" invalid="no">8.9254766031195854e-01</row><row type="TypeDouble" index="5" invalid="no">1.1058558558558558e+00</row><row type="TypeDouble" index="6" invalid="no">9.1706161137440767e-01</row><row type="TypeDouble" index="7" invalid="no">9.0756302521008414e-01</row><row type="TypeDouble" index="8" invalid="no">9.0728476821192061e-01</row><row type="TypeDouble" index="9" invalid="no">8.9400921658986177e-01</row><row type="TypeDouble" index="10" invalid="no">8.8172043010752676e-01</row><row type="TypeDouble" index="11" invalid="no">8.8235294117647045e-01</row><row type="TypeDouble" index="12" invalid="no">8.7128712871287128e-01</row><row type="TypeDouble" index="13" invalid="no">8.7096774193548399e-01</row><row type="TypeDouble" index="14" invalid="no">8.7179487179487181e-01</row></column><column creation_time="2017-02-11 09:25:44:891" caption_spec="%n%C{ - }%c" name="u(R)" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[uR (Mohm)]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:891" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:891" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="2" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">col(&quot;R&quot;)*sqrt((col(&quot;uI&quot;)/col(&quot;I&quot;))^2+(col(&quot;uVR&quot;)/col(&quot;VR&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">1.4367643684664361e-03</row><row type="TypeDouble" index="1" invalid="no">1.5360863408456810e-03</row><row type="TypeDouble" index="2" invalid="no">1.8518455890360053e-03</row><row type="TypeDouble" index="3" invalid="no">2.0038060100522797e-03</row><row type="TypeDouble" index="4" invalid="no">2.3230303260544454e-03</row><row type="TypeDouble" index="5" invalid="no">3.3579843708741613e-03</row><row type="TypeDouble" index="6" invalid="no">3.2152494978875713e-03</row><row type="TypeDouble" index="7" invalid="no">3.7827268978151730e-03</row><row type="TypeDouble" index="8" invalid="no">4.4710149495460275e-03</row><row type="TypeDouble" index="9" invalid="no">6.1813925026345364e-03</row><row type="TypeDouble" index="10" invalid="no">7.1677594308995653e-03</row><row type="TypeDouble" index="11" invalid="no">9.8060415646666361e-03</row><row type="TypeDouble" index="12" invalid="no">1.3131942842452574e-02</row><row type="TypeDouble" index="13" invalid="no">2.1388974808631080e-02</row><row type="TypeDouble" index="14" invalid="no">3.4016918659504347e-02</row></column><column creation_time="2017-09-11 12:20:14:292" caption_spec="%n%C{ - }%c" name="RC" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-09-11 12:20:14:292" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-09-11 12:20:14:292" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="4" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">col(&quot;VC&quot;)/col(&quot;I&quot;)</formula><row type="TypeDouble" index="0" invalid="no">4.2918454935622165e-02</row><row type="TypeDouble" index="1" invalid="no">1.0309278350515458e-01</row><row type="TypeDouble" index="2" invalid="no">2.0883534136546181e-01</row><row type="TypeDouble" index="3" invalid="no">3.9285714285714285e-01</row><row type="TypeDouble" index="4" invalid="no">6.1525129982668969e-01</row><row type="TypeDouble" index="5" invalid="no">8.5360360360360332e-01</row><row type="TypeDouble" index="6" invalid="no">1.1445497630331751e+00</row><row type="TypeDouble" index="7" invalid="no">1.5294117647058822e+00</row><row type="TypeDouble" index="8" invalid="no">1.9735099337748341e+00</row><row type="TypeDouble" index="9" invalid="no">3.1152073732718892e+00</row><row type="TypeDouble" index="10" invalid="no">3.7956989247311825e+00</row><row type="TypeDouble" index="11" invalid="no">5.5147058823529402e+00</row><row type="TypeDouble" index="12" invalid="no">7.7425742574257423e+00</row><row type="TypeDouble" index="13" invalid="no">1.3161290322580646e+01</row><row type="TypeDouble" index="14" invalid="no">2.1435897435897434e+01</row></column><column creation_time="2017-02-11 09:25:44:892" caption_spec="%n%C{ - }%c" name="logI" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:892" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:892" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="3" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">ln(col(&quot;I&quot;))</formula><row type="TypeDouble" index="0" invalid="no">2.2321626286975000e+00</row><row type="TypeDouble" index="1" invalid="no">2.1667653698515110e+00</row><row type="TypeDouble" index="2" invalid="no">2.0108949991447260e+00</row><row type="TypeDouble" index="3" invalid="no">1.9050881545350582e+00</row><row type="TypeDouble" index="4" invalid="no">1.7526720805200082e+00</row><row type="TypeDouble" index="5" invalid="no">1.4906543764441336e+00</row><row type="TypeDouble" index="6" invalid="no">1.4398351280479205e+00</row><row type="TypeDouble" index="7" invalid="no">1.2725655957915476e+00</row><row type="TypeDouble" index="8" invalid="no">1.1052568313867783e+00</row><row type="TypeDouble" index="9" invalid="no">7.7472716755236815e-01</row><row type="TypeDouble" index="10" invalid="no">6.2057648772510998e-01</row><row type="TypeDouble" index="11" invalid="no">3.0748469974796072e-01</row><row type="TypeDouble" index="12" invalid="no">9.9503308531680920e-03</row><row type="TypeDouble" index="13" invalid="no">-4.7803580094299980e-01</row><row type="TypeDouble" index="14" invalid="no">-9.4160853985844495e-01</row></column><column creation_time="2017-02-11 09:25:44:893" caption_spec="%n%C{ - }%c" name="logVR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-02-11 09:25:44:893" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-02-11 09:25:44:893" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="3" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="14">ln(col(&quot;VR&quot;))</formula><row type="TypeDouble" index="0" invalid="no">2.1162555148025524e+00</row><row type="TypeDouble" index="1" invalid="no">2.0541237336955462e+00</row><row type="TypeDouble" index="2" invalid="no">1.9657127763514930e+00</row><row type="TypeDouble" index="3" invalid="no">1.8017098000812231e+00</row><row type="TypeDouble" index="4" invalid="no">1.6389967146756448e+00</row><row type="TypeDouble" index="5" invalid="no">1.5912739418064292e+00</row><row type="TypeDouble" index="6" invalid="no">1.3532545070416904e+00</row><row type="TypeDouble" index="7" invalid="no">1.1755733298042381e+00</row><row type="TypeDouble" index="8" invalid="no">1.0079579203999789e+00</row><row type="TypeDouble" index="9" invalid="no">6.6268797307523675e-01</row><row type="TypeDouble" index="10" invalid="no">4.9469624183610700e-01</row><row type="TypeDouble" index="11" invalid="no">1.8232155679395459e-01</row><row type="TypeDouble" index="12" invalid="no">-1.2783337150988489e-01</row><row type="TypeDouble" index="13" invalid="no">-6.1618613942381695e-01</row><row type="TypeDouble" index="14" invalid="no">-1.0788096613719298e+00</row></column><column_width column="0">78</column_width><column_width column="1">83</column_width><column_width column="2">76</column_width><column_width column="3">76</column_width><column_width column="4">86</column_width><column_width column="5">95</column_width><column_width column="6">84</column_width><column_width column="7">104</column_width><column_width column="8">86</column_width><column_width column="9">86</column_width><column_width column="10">83</column_width><column_width column="11">86</column_width><column_width column="12">120</column_width><column_width column="13">83</column_width><column_width column="14">120</column_width></table>
+geometry	0	0	573	382	
+
+</table>
+<note>
+GUIA-PRACTICA01	26/10/2017 16:03:54
+geometry	0	0	514	237	
+WindowLabel		0
+AutoExec	0
+<content>
+1.- TOMA DE DATOS EN EL LABORATORIO
+2.-TABLAS DE DATOS: 
+· RELLENAR: Para la carga y la descarga del condensador, rellene las respectivas tablas 
+	Columnas: tiempo t, corriente I, diferencia de potencial VR y VC, resistencia R, ln(I) y ln(V).
+· CALCULAR: La ddp en el condensador VC se obtiene como la fem (epsilon) de la fuente menos VR
+ 
+3.- GRÁFICAS 
+
+FIGURA01-INTENSIDAD Y DDP
+· Las gráficas muestran la evolución temporal de la intensida I y de la ddp en el condensador (VC), frente al tiempo t
+· La primera debe ser una curva exponencial decreciente y la segunda una exponencial creciente
+· COMENTAR los resultados.
+
+FIGURA02-RELACIÓN IV: 
+· Las gráficas muestran la diferencia de potencial (ddp) en la resistencia (VR), frente a la intensidad de corriente en el circuito (I). 
+· REALIZAR un ajuste lineal en ambas gráficas. Si se cumple la ley de Ohm, las pendientes nos darán dos estimaciones del valor de R
+	Resistencia en la carga (R1):     R_1=( ???? +- ?????);
+	Resistencia en la descarga(R2): R_2=( ???? +- ?????);
+
+
+FIGURA03-LOGARITMOS:
+· Las gráficas muestran los logaritmos de la ddp VR I frente al tiempo, tanto para la carga como para la descarga. 
+· Los puntos deben alinearse alrededor de una recta de pendiente tau. 
+· REALIZAR: un ajuste lineal en ambas gráficas.
+	tau, intensidad de carga (t11):     	     t_11=( ???? +- ?????);
+	tau, ddp de carga (t12):  	 	     t_12=( ???? +- ?????);
+	tau, intensidad de descarga (t21):	     t_21=( ???? +- ?????);
+	tau, ddp de descarga (t22)                           t_22=( ???? +- ?????);
+
+· COMENTAR los resultados.
+
+
+4.- CÁLCULO FINAL
+· CALCULAR: A partir de los datos obtenidos, obtener una estimación (la "mejor" posible) de la capacidad C del condensador. 
+	Capacidad del condensador:     	     C=( ???? +- ?????);
+· COMPARAR: Comparar la capacidad C estimada con su valor nominal.
+· COMENTAR los resultados.
+</content>
+</note>
+<multiLayer>
+FIGURA01-INTENSIDADyDDP	2	1	26/10/2017 11:41:23
+geometry	maximized	active
+WindowLabel		0
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	627	584
+Alignement	0	0
+<graph>
+ggeometry	2	3	466	638
+PlotTitle	INTENSIDAD <i>I(t)</i>, CARGA (NEGRO) Y DESCARGA (ROJO)	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	TIEMPO TRANSCURRIDO <i>t</i> (s)	Intensidad de Corriente <i>I</i> (μA)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	16	75	0	0	0
+ScaleFont0	Book Antiqua	14	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	9	75	0	0	0
+ScaleFont2	Book Antiqua	14	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	9	75	0	0	0
+AxisFont0	Book Antiqua	10	75	0	0	0
+AxisFont1	MS Shell Dlg 2	9	50	0	0	0
+AxisFont2	Book Antiqua	10	75	0	0	0
+AxisFont3	MS Shell Dlg 2	9	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA01-CARGA_t	TABLA01-CARGA_I	1	0	8	0	1	7	1	3	3	0	0	14	1	2	0	0	13	1
+curve	TABLA02-DESCARGA_t	TABLA02-DESCARGA_I	1	0	7	0	1	7	1	1	1	0	0	14	1	2	0	0	13	1
+FunctionCurve	0,LinearFit1,x,0.74,85.45	2			0	1	1	0	1	0	0	0	19	0	0	14	0	2	0	76639656	658087	1
+<formula>
+B=7.66484613406159
+A=-0.10212787933648
+
+A*x+B
+</formula>
+scale	0	0	12	1	21	1	0	0
+scale	1	0	12	1	8	5	0	0
+scale	2	-5	200	25	11	1	0	0
+scale	3	-5	200	25	11	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	2	5
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<text>	-2.52415458937198	11.8920863309353	MS Shell Dlg 2	8	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: TABLA01-CARGA_I	Function: A*x+B		Chi^2 = 13.2949491074938	R^2 = 0.877566271871858	B = 7.66484613406159 +/- 0.458611567653371	A = -0.10212787933648 +/- 0.0110119508999372	</text>
+</graph>
+<graph>
+ggeometry	471	3	471	638
+PlotTitle	D.D.P. [<i>V<sub>C</sub>(t), V<sub>R</sub>(t)</i>], CARGA (NEGRO) Y DESCARGA (ROJO)	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	TIEMPO TRANSCURRIDO <i>t</i> (s)	Diferencia de potencial <i>V<sub>C</sub></i>, V<sub>R</sub>  (V)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	16	75	0	0	0
+ScaleFont0	Book Antiqua	14	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	9	75	0	0	0
+ScaleFont2	Book Antiqua	14	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	9	75	0	0	0
+AxisFont0	Book Antiqua	10	75	0	0	0
+AxisFont1	MS Shell Dlg 2	9	50	0	0	0
+AxisFont2	Book Antiqua	10	75	0	0	0
+AxisFont3	MS Shell Dlg 2	9	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA01-CARGA_t	TABLA01-CARGA_VR	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	13	1
+curve	TABLA02-DESCARGA_t	TABLA02-DESCARGA_VR	1	0	1	0	1	7	2	1	1	0	0	14	1	2	0	0	13	1
+curve	TABLA01-CARGA_t	TABLA01-CARGA_VC	1	0	4	0	1	7	1	0	0	0	0	14	1	2	0	0	13	1
+FunctionCurve	0,LinearFit1,x,0.74,85.45	2			0	1	1	0	1	0	0	0	19	0	0	14	0	2	0	76639136	0	1
+<formula>
+B=7.05935604696225
+A=-0.0942950500726882
+
+A*x+B
+</formula>
+FunctionCurve	0,LinearFit2,x,5.78,142.8	2			0	1	1	0	1	0	0	0	19	0	0	14	0	2	0	76637816	0	1
+<formula>
+B=5.16696768803861
+A=-0.0482823505378732
+
+A*x+B
+</formula>
+scale	0	0	12	1	21	1	0	0
+scale	1	0	12	1	13	5	0	0
+scale	2	-5	200	25	6	1	0	0
+scale	3	-5	200	25	9	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+</multiLayer>
+<multiLayer>
+FIGURA02-RELACION-IV	2	1	02/11/2017 9:13:39
+geometry	0	0	514	437	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	627	584
+Alignement	0	0
+<graph>
+ggeometry	1	1	242	369
+PlotTitle	RELACIÓN<i> I-V<sub>R</sub></i> PARA LA CARGA	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Intensidad de Corriente <i>I</i> (μA)	Diferencia de potencial <i>V</i> (V)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	9	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA01-CARGA_I	TABLA01-CARGA_VR	1	0	1	0	1	7	1	0	0	0	0	14	1	2	0	0	13	1
+FunctionCurve	0,LinearFit1,x,0.62,9.32	2			0	1	1	0	1	0	0	0	19	0	0	14	0	2	0	76633176	19968	1
+<formula>
+B=0.0429032750769416
+A=0.909246087407479
+
+A*x+B
+</formula>
+scale	0	0	14	1	15	1	0	0
+scale	1	0	14	1	8	5	0	0
+scale	2	0	12	1	15	1	0	0
+scale	3	0	12	1	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	2	5
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<text>	0.145631067961165	13.8741007194245	MS Shell Dlg 2	5	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: TABLA01-CARGA_VR	Function: A*x+B		Chi^2 = 0.926667574046607	R^2 = 0.989783184500582	B = 0.0429032750769416 +/- 0.136747536144272	A = 0.909246087407479 +/- 0.0266672699719062	</text>
+</graph>
+<graph>
+ggeometry	246	1	246	369
+PlotTitle	RELACIÓN <i>I-V<sub>R</sub></i> PARA LA DESCARGA	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Intensidad de Corriente <i>I</i> (μA)	                                                          			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	9	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA02-DESCARGA_I	TABLA02-DESCARGA_VR	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	13	1
+FunctionCurve	0,LinearFit1,x,0.1,7.42	2			0	1	1	0	1	0	0	0	19	0	0	14	0	2	0	76635256	4784195	1
+<formula>
+B=-0.0369313089062117
+A=0.932197823633845
+
+A*x+B
+</formula>
+scale	0	0	14	1	99	1	0	0
+scale	1	0	14	1	15	5	0	0
+scale	2	0	8	1	10	1	0	0
+scale	3	0	8	1	10	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<text>	0.0966183574879227	13.8727272727273	MS Shell Dlg 2	5	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: TABLA02-DESCARGA_VR	Function: A*x+B		Chi^2 = 0.754180578142014	R^2 = 0.98765362263043	B = -0.0369313089062117 +/- 0.117439743203354	A = 0.932197823633845 +/- 0.0300874169631606	</text>
+</graph>
+</multiLayer>
+<multiLayer>
+FIGURA03-LOGARITMOS	2	2	02/11/2017 9:42:22
+geometry	0	0	514	438	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	452	175
+Alignement	0	0
+<graph>
+ggeometry	5	4	236	173
+PlotTitle	LOGARITMO DE LA INTENSIDAD <i>I(t)</i>, CARGA	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles		LOGARITMO DE LA INT., <i>log (I(t))</i> 	Y Axis Title		
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	5124	4
+TitleFont	Book Antiqua	8	75	0	0	0
+ScaleFont0	Book Antiqua	7	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	7	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	7	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	7	75	0	0	0
+AxisFont0	MS Shell Dlg 2	7	50	0	0	0
+AxisFont1	MS Shell Dlg 2	7	50	0	0	0
+AxisFont2	MS Shell Dlg 2	7	50	0	0	0
+AxisFont3	MS Shell Dlg 2	7	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA01-CARGA_t	TABLA01-CARGA_logI	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	13	1
+FunctionCurve	0,LinearFit1,x,0.74,85.45	2			0	1	1	0	1	0	0	0	19	0	0	14	0	2	0	97890600	4784210	1
+<formula>
+B=2.2271545869683
+A=-0.0316399543263581
+
+A*x+B
+</formula>
+scale	0	-3	3	0	7	5	0	0
+scale	1	-3	3	0	7	5	0	0
+scale	2	-1	100	10	9	5	0	0
+scale	3	-1	100	10	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<text>	0.315104166666667	2.87068965517241	MS Shell Dlg 2	5	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: TABLA01-CARGA_logI	Function: A*x+B		Chi^2 = 0.0126500173966928	R^2 = 0.998618845432522	B = 2.2271545869683 +/- 0.0141464421072067	A = -0.0316399543263581 +/- 0.000339677271313632	</text>
+</graph>
+<graph>
+ggeometry	253	4	236	176
+PlotTitle	<b>LOGARITMO DE LA INTENSIDAD <i>I(t)</i>, DESCARGA</b>	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles			LOGARITMO DE LA INT., <i>log (I(t))</i> 		
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	5124	4
+TitleFont	Book Antiqua	8	75	0	0	0
+ScaleFont0	Book Antiqua	7	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	7	75	0	0	0
+ScaleFont2	MS Shell Dlg 2	7	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	7	75	0	0	0
+AxisFont0	MS Shell Dlg 2	7	50	0	0	0
+AxisFont1	MS Shell Dlg 2	7	50	0	0	0
+AxisFont2	MS Shell Dlg 2	7	50	0	0	0
+AxisFont3	MS Shell Dlg 2	7	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA02-DESCARGA_t	TABLA02-DESCARGA_logI	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	13	1
+FunctionCurve	0,LinearFit1,x,5.78,142.8	2			0	1	1	0	1	0	0	0	19	0	0	14	0	2	0	97898480	4784210	1
+<formula>
+B=2.23048197747742
+A=-0.0328036431723583
+
+A*x+B
+</formula>
+scale	0	-3	3	0	7	5	0	0
+scale	1	-3	3	0	7	5	0	0
+scale	2	0	150	10	19	5	0	0
+scale	3	0	100	10	16	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<text>	1.84275184275184	2.87341772151899	MS Shell Dlg 2	5	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: TABLA02-DESCARGA_logI	Function: A*x+B		Chi^2 = 0.163332690506797	R^2 = 0.991802185811957	B = 2.23048197747742 +/- 0.0503280547844994	A = -0.0328036431723583 +/- 0.000860930236335197	</text>
+</graph>
+<graph>
+ggeometry	2	181	241	193
+PlotTitle	LOGARITMO DE LA D.D.P. <i>V<sub>R</sub>(t)</i>, CARGA	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	TIEMPO TRANSCURRIDO <i>t</i> (s)	LOGARITMO DE LA D.D.P., <i>log (V<sub>R</sub>)</i> 			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Book Antiqua	9	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	8	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	8	75	0	0	0
+AxisFont0	MS Shell Dlg 2	8	50	0	0	0
+AxisFont1	MS Shell Dlg 2	8	50	0	0	0
+AxisFont2	MS Shell Dlg 2	8	50	0	0	0
+AxisFont3	MS Shell Dlg 2	8	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA01-CARGA_t	TABLA01-CARGA_logVR	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	13	1
+FunctionCurve	0,LinearFit1,x,0.74,85.45	2			0	1	1	0	1	0	0	0	19	0	0	14	0	2	0	97887560	4784210	1
+<formula>
+B=2.16106189030244
+A=-0.0324755080889588
+
+A*x+B
+</formula>
+scale	0	0	3	1	4	5	0	0
+scale	1	0	3	1	8	5	0	0
+scale	2	-1	70	10	9	5	0	0
+scale	3	-1	70	10	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<text>	-0.114713216957606	2.93697478991597	MS Shell Dlg 2	5	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: TABLA01-CARGA_logVR	Function: A*x+B		Chi^2 = 0.0112794829539878	R^2 = 0.998830790583279	B = 2.16106189030244 +/- 0.013358148322488	A = -0.0324755080889588 +/- 0.000320749156402651	</text>
+</graph>
+<graph>
+ggeometry	252	181	240	192
+PlotTitle	LOGARITMO DE LA D.D.P. <i>V<sub>R</sub>(t)</i>, DESCARGA	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	<b>TIEMPO TRANSCURRIDO <i>t</i> (s)</b>	LOGARITMO DE LA D.D.P., <i>log (V<sub>R</sub>)</i> 			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Book Antiqua	9	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	8	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	8	75	0	0	0
+AxisFont0	MS Shell Dlg 2	8	50	0	0	0
+AxisFont1	MS Shell Dlg 2	8	50	0	0	0
+AxisFont2	MS Shell Dlg 2	8	50	0	0	0
+AxisFont3	MS Shell Dlg 2	8	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA02-DESCARGA_t	TABLA02-DESCARGA_logVR	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	13	1
+FunctionCurve	0,LinearFit1,x,5.78,142.8	2			0	1	1	0	1	0	0	0	19	0	0	14	0	2	0	97892800	4784210	1
+<formula>
+B=2.15891683451068
+A=-0.0332112147996765
+
+A*x+B
+</formula>
+scale	0	-3	3	0	5	5	0	0
+scale	1	-3	3	0	8	5	0	0
+scale	2	0	70	10	19	5	0	0
+scale	3	0	70	10	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<text>	0.892857142857143	2.87654320987654	MS Shell Dlg 2	5	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: TABLA02-DESCARGA_logVR	Function: A*x+B		Chi^2 = 0.085388878846552	R^2 = 0.995801938398014	B = 2.15891683451068 +/- 0.036389345343667	A = -0.0332112147996765 +/- 0.000622489540296227	</text>
+</graph>
+</multiLayer>
+<log>
+[26/10/2017 12:13:48	Plot: ''Graph1'']
+Linear Regression fit of dataset: TABLA01-RESISTENCIA_V, using function: A*x+B
+Y standard errors: Associated dataset (TABLA01-RESISTENCIA_u(V))
+From x = 1 to x = 13
+B (y-intercept) = 0 +/- 0,11766968108291
+A (slope) = 1 +/- 0,014824986333222
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[26/10/2017 18:16:30	Plot: ''FIGURA02-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA01-RESISTENCIA_logV, using function: A*x+B
+Y standard errors: Unknown
+From x = -0,186329578191493 to x = 2,3869262414278
+B (y-intercept) = -0,105237656526923 +/- 0,00142531734995573
+A (slope) = 1,0010777236826 +/- 0,000946542945501466
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6,3748384738983e-06
+R^2 = 0,999992847927105
+---------------------------------------------------------------------------------------
+[26/10/2017 18:16:53	Plot: ''FIGURA02-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA02-LAMPARA-FILAMENTO_logV, using function: A*x+B
+Y standard errors: Unknown
+From x = -1,83258146374831 to x = -0,198450938723838
+B (y-intercept) = 5,72325870388981 +/- 0,0357181724386274
+A (slope) = 1,62494774504644 +/- 0,0325791918148731
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,00246158019167352
+R^2 = 0,997194052545971
+---------------------------------------------------------------------------------------
+[26/10/2017 18:18:39	Plot: ''FIGURA01-RELACION-IV'']
+Linear Regression fit of dataset: TABLA02-LAMPARA-FILAMENTO_V, using function: A*x+B
+Y standard errors: Unknown
+From x = 0,16 to x = 0,82
+B (y-intercept) = -40,784071625022 +/- 4,36792372102568
+A (slope) = 294,300427175376 +/- 9,20452891733561
+--------------------------------------------------------------------------------------
+Chi^2/doF = 32,1741638313703
+R^2 = 0,993199266163702
+---------------------------------------------------------------------------------------
+[26/10/2017 18:18:59	Plot: ''FIGURA01-RELACION-IV'']
+Linear Regression fit of dataset: TABLA01-RESISTENCIA_V, using function: A*x+B
+Y standard errors: Unknown
+From x = 0,83 to x = 10,88
+B (y-intercept) = -0,00523675650805274 +/- 0,00249229563229961
+A (slope) = 0,9030723670252 +/- 0,00042537889444864
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2,10481478832376e-05
+R^2 = 0,999998225009695
+---------------------------------------------------------------------------------------
+[26/10/2017 18:28:04	Plot: ''FIGURA04-RELACION-IP'']
+Polynomial fit of dataset: TABLA02-LAMPARA-FILAMENTO_P, using function: a0+a1*x+a2*x^2
+Y standard errors: Unknown
+From x = 0,16 to x = 0,82
+a0  = 7,6290644936321 +/- 2,06000925343039
+a1  = -85,4710650436142 +/- 9,67964468083803
+a2  = 345,311106712994 +/- 9,84568027733867
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,46142233416429
+R^2 = 0,999648832268797
+---------------------------------------------------------------------------------------
+[26/10/2017 18:28:47	Plot: ''FIGURA04-RELACION-IP'']
+Polynomial fit of dataset: TABLA01-RESISTENCIA_P, using function: a0+a1*x+a2*x^2
+Y standard errors: Unknown
+From x = 0,83 to x = 10,88
+a0  = 0,0105610412102461 +/- 0,0211584970656679
+a1  = -0,0137512945513468 +/- 0,0100795798814652
+a2  = 0,903946356346656 +/- 0,000871962875994074
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,000540525602670872
+R^2 = 0,999999701327468
+---------------------------------------------------------------------------------------
+[20/11/2017 18:39:37	Plot: ''FIGURA03-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA01-CARGA_logI, using function: A*x+B
+Y standard errors: Unknown
+From x = 0 to x = 65
+B (y-intercept) = -11,5958750239802 +/- 0,0141745739515056
+A (slope) = -0,0181629432646493 +/- 0,00037064835474662
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,00078134990385939
+R^2 = 0,995027577029348
+---------------------------------------------------------------------------------------
+[20/11/2017 18:39:50	Plot: ''FIGURA03-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA02-DESCARGA_logI, using function: A*x+B
+Y standard errors: Unknown
+From x = 0 to x = 110
+B (y-intercept) = 2,36006909090808 +/- 0,00324300301033773
+A (slope) = -0,0183602327183837 +/- 4,37357442056154e-05
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3,28491874002916e-05
+R^2 = 0,999931912348692
+---------------------------------------------------------------------------------------
+[20/11/2017 18:40:27	Plot: ''FIGURA03-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA01-CARGA_logVR, using function: A*x+B
+Y standard errors: Unknown
+From x = 0 to x = 65
+B (y-intercept) = 2,05427886511108 +/- 0,00359322353913971
+A (slope) = -0,0160572203767589 +/- 9,39585484244835e-05
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5,02104376753298e-05
+R^2 = 0,999589290543786
+---------------------------------------------------------------------------------------
+[20/11/2017 18:40:59	Plot: ''FIGURA03-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA02-DESCARGA_logV, using function: A*x+B
+Y standard errors: Unknown
+From x = 0 to x = 110
+B (y-intercept) = 2,27158697414495 +/- 0,00460403078940203
+A (slope) = -0,0182892091951939 +/- 6,20908189965247e-05
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6,6207374467483e-05
+R^2 = 0,999861711487324
+---------------------------------------------------------------------------------------
+[20/11/2017 18:46:20	Plot: ''FIGURA02-RELACION-IV'']
+Linear Regression fit of dataset: TABLA01-CARGA_VR, using function: A*x+B
+Y standard errors: Unknown
+From x = 2,86 to x = 9
+B (y-intercept) = 0,555300023644427 +/- 0,11131236810626
+A (slope) = 0,792840472787757 +/- 0,0192197728788729
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,0198971564603767
+R^2 = 0,992997481386494
+---------------------------------------------------------------------------------------
+[20/11/2017 18:46:28	Plot: ''FIGURA02-RELACION-IV'']
+Linear Regression fit of dataset: TABLA02-DESCARGA_VR, using function: A*x+B
+Y standard errors: Unknown
+From x = 1,4 to x = 10,48
+B (y-intercept) = 0,0244890627362294 +/- 0,0118781037969125
+A (slope) = 0,91153913965306 +/- 0,00243674815811276
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,000661770503266507
+R^2 = 0,999914253844726
+---------------------------------------------------------------------------------------
+[28/11/2017 22:16:18	Plot: ''FIGURA01-INTENSIDADyDDP'']
+Linear Regression fit of dataset: TABLA01-CARGA_I, using function: A*x+B
+Y standard errors: Unknown
+From x = 0.74 to x = 85.45
+B (y-intercept) = 7.66484613406159 +/- 0.458611567653371
+A (slope) = -0.10212787933648 +/- 0.0110119508999372
+--------------------------------------------------------------------------------------
+Chi^2 = 13.2949491074938
+R^2 = 0.877566271871858
+---------------------------------------------------------------------------------------
+[28/11/2017 22:17:22	Plot: ''FIGURA02-RELACION-IV'']
+Linear Regression fit of dataset: TABLA01-CARGA_VR, using function: A*x+B
+Y standard errors: Unknown
+From x = 0.62 to x = 9.32
+B (y-intercept) = 0.0429032750769416 +/- 0.136747536144272
+A (slope) = 0.909246087407479 +/- 0.0266672699719062
+--------------------------------------------------------------------------------------
+Chi^2 = 0.926667574046607
+R^2 = 0.989783184500582
+---------------------------------------------------------------------------------------
+[28/11/2017 22:17:26	Plot: ''FIGURA02-RELACION-IV'']
+Linear Regression fit of dataset: TABLA02-DESCARGA_VR, using function: A*x+B
+Y standard errors: Unknown
+From x = 0.1 to x = 7.42
+B (y-intercept) = -0.0369313089062117 +/- 0.117439743203354
+A (slope) = 0.932197823633845 +/- 0.0300874169631606
+--------------------------------------------------------------------------------------
+Chi^2 = 0.754180578142014
+R^2 = 0.98765362263043
+---------------------------------------------------------------------------------------
+[28/11/2017 22:17:35	Plot: ''FIGURA03-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA01-CARGA_logI, using function: A*x+B
+Y standard errors: Unknown
+From x = 0.74 to x = 85.45
+B (y-intercept) = 2.2271545869683 +/- 0.0141464421072067
+A (slope) = -0.0316399543263581 +/- 0.000339677271313632
+--------------------------------------------------------------------------------------
+Chi^2 = 0.0126500173966928
+R^2 = 0.998618845432522
+---------------------------------------------------------------------------------------
+[28/11/2017 22:17:38	Plot: ''FIGURA03-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA02-DESCARGA_logI, using function: A*x+B
+Y standard errors: Unknown
+From x = 5.78 to x = 142.8
+B (y-intercept) = 2.23048197747742 +/- 0.0503280547844994
+A (slope) = -0.0328036431723583 +/- 0.000860930236335197
+--------------------------------------------------------------------------------------
+Chi^2 = 0.163332690506797
+R^2 = 0.991802185811957
+---------------------------------------------------------------------------------------
+[28/11/2017 22:17:41	Plot: ''FIGURA03-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA02-DESCARGA_logVR, using function: A*x+B
+Y standard errors: Unknown
+From x = 5.78 to x = 142.8
+B (y-intercept) = 2.15891683451068 +/- 0.036389345343667
+A (slope) = -0.0332112147996765 +/- 0.000622489540296227
+--------------------------------------------------------------------------------------
+Chi^2 = 0.085388878846552
+R^2 = 0.995801938398014
+---------------------------------------------------------------------------------------
+[28/11/2017 22:17:44	Plot: ''FIGURA03-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA01-CARGA_logVR, using function: A*x+B
+Y standard errors: Unknown
+From x = 0.74 to x = 85.45
+B (y-intercept) = 2.16106189030244 +/- 0.013358148322488
+A (slope) = -0.0324755080889588 +/- 0.000320749156402651
+--------------------------------------------------------------------------------------
+Chi^2 = 0.0112794829539878
+R^2 = 0.998830790583279
+---------------------------------------------------------------------------------------
+[28/11/2017 22:18:29	Plot: ''FIGURA01-INTENSIDADyDDP'']
+Linear Regression fit of dataset: TABLA01-CARGA_VC, using function: A*x+B
+Y standard errors: Unknown
+From x = 0.74 to x = 85.45
+B (y-intercept) = 1.64064395303775 +/- 0.386917165847923
+A (slope) = 0.0942950500726882 +/- 0.00929046088929125
+--------------------------------------------------------------------------------------
+Chi^2 = 9.46308335133472
+R^2 = 0.895666386346069
+---------------------------------------------------------------------------------------
+[28/11/2017 22:18:48	Plot: ''FIGURA01-INTENSIDADyDDP'']
+Linear Regression fit of dataset: TABLA01-CARGA_VR, using function: A*x+B
+Y standard errors: Unknown
+From x = 0.74 to x = 85.45
+B (y-intercept) = 7.05935604696225 +/- 0.386917165847923
+A (slope) = -0.0942950500726882 +/- 0.00929046088929125
+--------------------------------------------------------------------------------------
+Chi^2 = 9.46308335133472
+R^2 = 0.895666386346069
+---------------------------------------------------------------------------------------
+[28/11/2017 22:19:09	Plot: ''FIGURA01-INTENSIDADyDDP'']
+Linear Regression fit of dataset: TABLA02-DESCARGA_VR, using function: A*x+B
+Y standard errors: Unknown
+From x = 5.78 to x = 142.8
+B (y-intercept) = 5.16696768803861 +/- 0.532376554625551
+A (slope) = -0.0482823505378732 +/- 0.00910702936872215
+--------------------------------------------------------------------------------------
+Chi^2 = 18.2764006007662
+R^2 = 0.700804627811558
+---------------------------------------------------------------------------------------
+</log>

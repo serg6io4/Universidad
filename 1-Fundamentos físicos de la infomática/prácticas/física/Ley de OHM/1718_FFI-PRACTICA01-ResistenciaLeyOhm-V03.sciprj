@@ -1,0 +1,669 @@
+SciDAVis 1.22.0 project file
+<scripting-lang>	muParser
+<windows>	8
+<table>
+15033
+<table creation_time="2017-26-10 11:14:42:000" caption_spec="%n%C{ - }%c" name="TABLA01-RESISTENCIA" columns="10" rows="10"><comment><![CDATA[]]></comment><column creation_time="2017-26-10 11:14:42:266" caption_spec="%n%C{ - }%c" name="I" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[I (microA)]]></comment><input_filter><simple_filter creation_time="2017-26-10 11:14:42:266" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 11:14:42:266" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.6299999999999999e+00</row><row type="TypeDouble" index="1" invalid="no">7.5400000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">4.8700000000000001e+00</row><row type="TypeDouble" index="3" invalid="no">6.1200000000000001e+00</row><row type="TypeDouble" index="4" invalid="no">9.0800000000000001e+00</row><row type="TypeDouble" index="5" invalid="no">1.3170000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">1.2770000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">7.6000000000000001e-01</row><row type="TypeDouble" index="8" invalid="no">6.8399999999999999e+00</row><row type="TypeDouble" index="9" invalid="no">9.7300000000000004e+00</row></column><column creation_time="2017-26-10 11:17:39:378" caption_spec="%n%C{ - }%c" name="uI" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[uI (microA)]]></comment><input_filter><simple_filter creation_time="2017-26-10 11:17:39:378" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 11:17:39:378" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">0,01</formula><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row></column><column creation_time="2017-26-10 11:14:42:267" caption_spec="%n%C{ - }%c" name="VR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[VR (VOLTIOS)]]></comment><input_filter><simple_filter creation_time="2017-26-10 11:14:42:267" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 11:14:42:267" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.3799999999999999e+00</row><row type="TypeDouble" index="1" invalid="no">6.8499999999999996e+00</row><row type="TypeDouble" index="2" invalid="no">4.4199999999999999e+00</row><row type="TypeDouble" index="3" invalid="no">5.5599999999999996e+00</row><row type="TypeDouble" index="4" invalid="no">8.2599999999999998e+00</row><row type="TypeDouble" index="5" invalid="no">1.1990000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">1.1630000000000001e+01</row><row type="TypeDouble" index="7" invalid="no">6.8000000000000005e-01</row><row type="TypeDouble" index="8" invalid="no">6.2199999999999998e+00</row><row type="TypeDouble" index="9" invalid="no">8.8499999999999996e+00</row></column><column creation_time="2017-26-10 11:19:05:977" caption_spec="%n%C{ - }%c" name="uVR" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[uVR (VOLTIOS)]]></comment><input_filter><simple_filter creation_time="2017-26-10 11:19:05:977" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 11:19:05:977" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row></column><column creation_time="2017-26-10 11:19:12:665" caption_spec="%n%C{ - }%c" name="R" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[R (MEGA-OHM)]]></comment><input_filter><simple_filter creation_time="2017-26-10 11:19:12:665" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 11:19:12:665" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="3" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">col(&quot;VR&quot;)/col(&quot;I&quot;)</formula><row type="TypeDouble" index="0" invalid="no">9.0800000000000003e-01</row><row type="TypeDouble" index="1" invalid="no">9.0848806366047741e-01</row><row type="TypeDouble" index="2" invalid="no">9.0759753593429160e-01</row><row type="TypeDouble" index="3" invalid="no">9.0849673202614367e-01</row><row type="TypeDouble" index="4" invalid="no">9.0800000000000003e-01</row><row type="TypeDouble" index="5" invalid="no">9.0800000000000003e-01</row><row type="TypeDouble" index="6" invalid="no">9.0800000000000003e-01</row><row type="TypeDouble" index="7" invalid="no">9.0800000000000003e-01</row><row type="TypeDouble" index="8" invalid="no">9.0800000000000003e-01</row><row type="TypeDouble" index="9" invalid="no">9.0800000000000003e-01</row></column><column creation_time="2017-26-10 11:17:41:697" caption_spec="%n%C{ - }%c" name="uR" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[uR (MEGA-OHMS)]]></comment><input_filter><simple_filter creation_time="2017-26-10 11:17:41:697" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 11:17:41:697" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="1" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">col(&quot;R&quot;)*sqrt((col(&quot;uI&quot;)/col(&quot;I&quot;))^2+(col(&quot;uVR&quot;)/col(&quot;VR&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">5.1453616122447057e-03</row><row type="TypeDouble" index="1" invalid="no">1.7918505983139596e-03</row><row type="TypeDouble" index="2" invalid="no">2.7730116956901237e-03</row><row type="TypeDouble" index="3" invalid="no">2.2076163071890528e-03</row><row type="TypeDouble" index="4" invalid="no">1.4860694683263326e-03</row><row type="TypeDouble" index="5" invalid="no">1.0241265870374336e-03</row><row type="TypeDouble" index="6" invalid="no">1.0559991169042196e-03</row><row type="TypeDouble" index="7" invalid="no">1.7917607269126348e-02</row><row type="TypeDouble" index="8" invalid="no">1.9731330739697415e-03</row><row type="TypeDouble" index="9" invalid="no">1.3869059622816926e-03</row></column><column creation_time="2017-26-10 11:19:03:393" caption_spec="%n%C{ - }%c" name="PR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[PR (microWATIOS)]]></comment><input_filter><simple_filter creation_time="2017-26-10 11:19:03:393" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 11:19:03:393" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="4" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">col(&quot;VR&quot;)*col(&quot;I&quot;)</formula><row type="TypeDouble" index="0" invalid="no">6.2593999999999994e+00</row><row type="TypeDouble" index="1" invalid="no">5.1649000000000001e+01</row><row type="TypeDouble" index="2" invalid="no">2.1525400000000001e+01</row><row type="TypeDouble" index="3" invalid="no">3.4027200000000001e+01</row><row type="TypeDouble" index="4" invalid="no">7.5000799999999998e+01</row><row type="TypeDouble" index="5" invalid="no">1.5790830000000000e+02</row><row type="TypeDouble" index="6" invalid="no">1.4851510000000002e+02</row><row type="TypeDouble" index="7" invalid="no">5.1680000000000004e-01</row><row type="TypeDouble" index="8" invalid="no">4.2544799999999995e+01</row><row type="TypeDouble" index="9" invalid="no">8.6110500000000002e+01</row></column><column creation_time="2017-26-10 11:23:26:623" caption_spec="%n%C{ - }%c" name="uPR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[uPR (WATIOS)]]></comment><input_filter><simple_filter creation_time="2017-26-10 11:23:26:623" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 11:23:26:623" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="1" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">col(&quot;PR&quot;)*sqrt((col(&quot;uI&quot;)/col(&quot;I&quot;))^2+(col(&quot;uVR&quot;)/col(&quot;VR&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">3.5470128277185584e-02</row><row type="TypeDouble" index="1" invalid="no">1.0186957347510590e-01</row><row type="TypeDouble" index="2" invalid="no">6.5767241085513101e-02</row><row type="TypeDouble" index="3" invalid="no">8.2684944215981673e-02</row><row type="TypeDouble" index="4" invalid="no">1.2274933808375507e-01</row><row type="TypeDouble" index="5" invalid="no">1.7810362152410042e-01</row><row type="TypeDouble" index="6" invalid="no">1.7272226260676415e-01</row><row type="TypeDouble" index="7" invalid="no">1.0198039027185571e-02</row><row type="TypeDouble" index="8" invalid="no">9.2452149785713478e-02</row><row type="TypeDouble" index="9" invalid="no">1.3152771571041597e-01</row></column><column creation_time="2017-26-10 15:37:06:915" caption_spec="%n%C{ - }%c" name="logI" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-26-10 15:37:06:915" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 15:37:06:915" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="3" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">ln(col(&quot;I&quot;))</formula><row type="TypeDouble" index="0" invalid="no">9.6698384618967315e-01</row><row type="TypeDouble" index="1" invalid="no">2.0202221820198649e+00</row><row type="TypeDouble" index="2" invalid="no">1.5830939370944985e+00</row><row type="TypeDouble" index="3" invalid="no">1.8115620965242347e+00</row><row type="TypeDouble" index="4" invalid="no">2.2060741926132019e+00</row><row type="TypeDouble" index="5" invalid="no">2.5779415157551897e+00</row><row type="TypeDouble" index="6" invalid="no">2.5470986700444480e+00</row><row type="TypeDouble" index="7" invalid="no">-2.7443684570176030e-01</row><row type="TypeDouble" index="8" invalid="no">1.9227877316344590e+00</row><row type="TypeDouble" index="9" invalid="no">2.2752138961979136e+00</row></column><column creation_time="2017-26-10 15:37:11:027" caption_spec="%n%C{ - }%c" name="logVR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-26-10 15:37:11:027" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 15:37:11:027" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="3" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">ln(col(&quot;VR&quot;))</formula><row type="TypeDouble" index="0" invalid="no">8.6710048768338333e-01</row><row type="TypeDouble" index="1" invalid="no">1.9242486522741338e+00</row><row type="TypeDouble" index="2" invalid="no">1.4861396960896067e+00</row><row type="TypeDouble" index="3" invalid="no">1.7155981082624909e+00</row><row type="TypeDouble" index="4" invalid="no">2.1114245875328868e+00</row><row type="TypeDouble" index="5" invalid="no">2.4840729690394228e+00</row><row type="TypeDouble" index="6" invalid="no">2.4535879665305731e+00</row><row type="TypeDouble" index="7" invalid="no">-3.8566248081198462e-01</row><row type="TypeDouble" index="8" invalid="no">1.8277699067510880e+00</row><row type="TypeDouble" index="9" invalid="no">2.1804174590198380e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width><column_width column="5">112</column_width><column_width column="6">116</column_width><column_width column="7">100</column_width><column_width column="8">79</column_width><column_width column="9">120</column_width></table>
+geometry	0	0	573	391	
+
+</table>
+<table>
+14943
+<table creation_time="2017-26-10 12:39:45:000" caption_spec="%n%C{ - }%c" name="TABLA02-LAMPARA-FILAMENTO" columns="10" rows="10"><comment><![CDATA[]]></comment><column creation_time="2017-26-10 12:39:45:686" caption_spec="%n%C{ - }%c" name="I" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[I (A)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:686" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:686" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.8999999999999998e-01</row><row type="TypeDouble" index="1" invalid="no">3.5999999999999999e-01</row><row type="TypeDouble" index="2" invalid="no">4.0999999999999998e-01</row><row type="TypeDouble" index="3" invalid="no">2.0999999999999999e-01</row><row type="TypeDouble" index="4" invalid="no">1.3000000000000000e-01</row><row type="TypeDouble" index="5" invalid="no">2.7000000000000002e-01</row><row type="TypeDouble" index="6" invalid="no">5.1000000000000001e-01</row><row type="TypeDouble" index="7" invalid="no">3.1000000000000000e-01</row><row type="TypeDouble" index="8" invalid="no">5.6000000000000005e-01</row><row type="TypeDouble" index="9" invalid="no">1.2000000000000000e-01</row></column><column creation_time="2017-26-10 12:39:45:687" caption_spec="%n%C{ - }%c" name="uI" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[uI (A)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:687" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:687" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e-02</row></column><column creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="VR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[VR (V)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.4100000000000001e+01</row><row type="TypeDouble" index="1" invalid="no">7.4299999999999997e+01</row><row type="TypeDouble" index="2" invalid="no">9.2799999999999997e+01</row><row type="TypeDouble" index="3" invalid="no">3.2899999999999999e+01</row><row type="TypeDouble" index="4" invalid="no">1.5400000000000000e+01</row><row type="TypeDouble" index="5" invalid="no">4.6700000000000003e+01</row><row type="TypeDouble" index="6" invalid="no">1.3130000000000001e+02</row><row type="TypeDouble" index="7" invalid="no">5.9100000000000001e+01</row><row type="TypeDouble" index="8" invalid="no">1.5069999999999999e+02</row><row type="TypeDouble" index="9" invalid="no">1.2500000000000000e+01</row></column><column creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="uVR" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[uVR (V)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:688" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="5" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000001e-01</row></column><column creation_time="2017-26-10 12:39:45:689" caption_spec="%n%C{ - }%c" name="R" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[R (ohm)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:689" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:689" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="0" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">col(&quot;VR&quot;)/col(&quot;I&quot;)</formula><row type="TypeDouble" index="0" invalid="no">1.8655172413793105e+02</row><row type="TypeDouble" index="1" invalid="no">2.0638888888888889e+02</row><row type="TypeDouble" index="2" invalid="no">2.2634146341463415e+02</row><row type="TypeDouble" index="3" invalid="no">1.5666666666666666e+02</row><row type="TypeDouble" index="4" invalid="no">1.1846153846153847e+02</row><row type="TypeDouble" index="5" invalid="no">1.7296296296296296e+02</row><row type="TypeDouble" index="6" invalid="no">2.5745098039215691e+02</row><row type="TypeDouble" index="7" invalid="no">1.9064516129032259e+02</row><row type="TypeDouble" index="8" invalid="no">2.6910714285714283e+02</row><row type="TypeDouble" index="9" invalid="no">1.0416666666666667e+02</row></column><column creation_time="2017-26-10 12:39:45:690" caption_spec="%n%C{ - }%c" name="uR" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[uR (ohm)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:690" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:690" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="0" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">col(&quot;R&quot;)*sqrt((col(&quot;uI&quot;)/col(&quot;I&quot;))^2+(col(&quot;uVR&quot;)/col(&quot;VR&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">6.4420535882442511e+00</row><row type="TypeDouble" index="1" invalid="no">5.7397502215294995e+00</row><row type="TypeDouble" index="2" invalid="no">5.5259088022537801e+00</row><row type="TypeDouble" index="3" invalid="no">7.4754995805184867e+00</row><row type="TypeDouble" index="4" invalid="no">9.1448359323086574e+00</row><row type="TypeDouble" index="5" invalid="no">6.4167333711382195e+00</row><row type="TypeDouble" index="6" invalid="no">5.0518650769229367e+00</row><row type="TypeDouble" index="7" invalid="no">6.1582983381666301e+00</row><row type="TypeDouble" index="8" invalid="no">4.8088013993295098e+00</row><row type="TypeDouble" index="9" invalid="no">8.7204638177983913e+00</row></column><column creation_time="2017-26-10 12:39:45:690" caption_spec="%n%C{ - }%c" name="PR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[PR (W)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:690" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:690" caption_spec="%n%C{ - }%c" name="OutputFilter" format="f" digits="1" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">col(&quot;VR&quot;)*col(&quot;I&quot;)</formula><row type="TypeDouble" index="0" invalid="no">1.5689000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">2.6747999999999998e+01</row><row type="TypeDouble" index="2" invalid="no">3.8047999999999995e+01</row><row type="TypeDouble" index="3" invalid="no">6.9089999999999998e+00</row><row type="TypeDouble" index="4" invalid="no">2.0020000000000002e+00</row><row type="TypeDouble" index="5" invalid="no">1.2609000000000002e+01</row><row type="TypeDouble" index="6" invalid="no">6.6963000000000008e+01</row><row type="TypeDouble" index="7" invalid="no">1.8321000000000002e+01</row><row type="TypeDouble" index="8" invalid="no">8.4391999999999996e+01</row><row type="TypeDouble" index="9" invalid="no">1.5000000000000000e+00</row></column><column creation_time="2017-26-10 12:39:45:691" caption_spec="%n%C{ - }%c" name="uPR" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[uPR (W)]]></comment><input_filter><simple_filter creation_time="2017-26-10 12:39:45:691" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 12:39:45:691" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="1" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">col(&quot;PR&quot;)*sqrt((col(&quot;uI&quot;)/col(&quot;I&quot;))^2+(col(&quot;uVR&quot;)/col(&quot;VR&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">5.4177670677134149e-01</row><row type="TypeDouble" index="1" invalid="no">7.4387162871022305e-01</row><row type="TypeDouble" index="2" invalid="no">9.2890526965886033e-01</row><row type="TypeDouble" index="3" invalid="no">3.2966953150086525e-01</row><row type="TypeDouble" index="4" invalid="no">1.5454772725601632e-01</row><row type="TypeDouble" index="5" invalid="no">4.6777986275597627e-01</row><row type="TypeDouble" index="6" invalid="no">1.3139901065076558e+00</row><row type="TypeDouble" index="7" invalid="no">5.9181247029781314e-01</row><row type="TypeDouble" index="8" invalid="no">1.5080401188297343e+00</row><row type="TypeDouble" index="9" invalid="no">1.2557467897629682e-01</row></column><column creation_time="2017-26-10 17:49:20:218" caption_spec="%n%C{ - }%c" name="logI" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-26-10 17:49:20:218" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 17:49:20:218" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="2" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">ln(col(&quot;I&quot;))</formula><row type="TypeDouble" index="0" invalid="no">-1.2378743560016174e+00</row><row type="TypeDouble" index="1" invalid="no">-1.0216512475319814e+00</row><row type="TypeDouble" index="2" invalid="no">-8.9159811928378363e-01</row><row type="TypeDouble" index="3" invalid="no">-1.5606477482646683e+00</row><row type="TypeDouble" index="4" invalid="no">-2.0402208285265546e+00</row><row type="TypeDouble" index="5" invalid="no">-1.3093333199837622e+00</row><row type="TypeDouble" index="6" invalid="no">-6.7334455326376563e-01</row><row type="TypeDouble" index="7" invalid="no">-1.1711829815029451e+00</row><row type="TypeDouble" index="8" invalid="no">-5.7981849525294205e-01</row><row type="TypeDouble" index="9" invalid="no">-2.1202635362000910e+00</row></column><column creation_time="2017-26-10 17:49:14:359" caption_spec="%n%C{ - }%c" name="logV" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-26-10 17:49:14:359" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-26-10 17:49:14:359" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="2" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="9">ln(col(&quot;VR&quot;))</formula><row type="TypeDouble" index="0" invalid="no">3.9908341858524357e+00</row><row type="TypeDouble" index="1" invalid="no">4.3081109517237133e+00</row><row type="TypeDouble" index="2" invalid="no">4.5304466397921548e+00</row><row type="TypeDouble" index="3" invalid="no">3.4934726577713260e+00</row><row type="TypeDouble" index="4" invalid="no">2.7343675094195836e+00</row><row type="TypeDouble" index="5" invalid="no">3.8437441646748516e+00</row><row type="TypeDouble" index="6" invalid="no">4.8774847813087510e+00</row><row type="TypeDouble" index="7" invalid="no">4.0792309244120526e+00</row><row type="TypeDouble" index="8" invalid="no">5.0152911056324498e+00</row><row type="TypeDouble" index="9" invalid="no">2.5257286443082556e+00</row></column><column_width column="0">120</column_width><column_width column="1">88</column_width><column_width column="2">74</column_width><column_width column="3">85</column_width><column_width column="4">74</column_width><column_width column="5">120</column_width><column_width column="6">96</column_width><column_width column="7">92</column_width><column_width column="8">92</column_width><column_width column="9">120</column_width></table>
+geometry	maximized	active
+
+</table>
+<note>
+GUIA-PRACTICA01	26/10/2017 16:03:54
+geometry	0	0	514	245	
+WindowLabel		0
+AutoExec	0
+<content>
+1.- TOMA DE DATOS EN EL LABORATORIO
+2.-TABLAS DE DATOS: 
+· RELLENAR: Para ambos elementos, resistencia óhmica (O) y lámpara de filamento (L), rellene las respectivas tablas 
+	Columnas: corriente I, diferencia de potencial V, resistencia R, potencia disipada (P_R), ln(I) y ln(V).
+
+3.- GRÁFICAS 
+
+FIGURA01-RELACIÓN IV: 
+· Las gráficas muestran la diferencia de potencial (ddp) en la resistencia (VR), frente a la intensidad de corriente en el circuito (I). 
+· Si un elemento cumple la ley de Ohm, V= RI, los puntos experimentales deben alinearse alrededor de una línea recta de pendiente R. 
+· REALIZAR un ajuste lineal en ambas gráficas. Si se cumple la ley de Ohm, la pendiente nos dará una estimación del valor de R
+	Resistencia óhmica (O):     R_O=( ???? +- ?????);
+	Lámpara de filamento(L):   R_L=( ???? +- ?????);
+·COMENTAR los resultados.
+
+FIGURA02-RELACIÓN log(I)-log(V):
+· Las gráficas muestran el logaritmo de la ddp en la resistencia (V), frente al logaritmo de la intensidad de corriente (I). 
+· Si un elemento cumple la ley de Ohm los puntos deben alinearse alrededor de una recta de pendiente 1, pues ln(V)= ln(R) + ln(I). 
+· Si un elemento no cumple la ley de Ohm los puntos deben alinearse alrededor de una recta de pendiente distinta de 1
+· REALIZAR un ajuste lineal en ambas gráficas. 
+	Resistencia óhmica (O):    PENDIENTE_O=( ???? +- ?????);
+	Lámpara de filamento (L): PENDIENTE_L=( ???? +- ?????);
+· COMENTAR los resultados.
+
+FIGURA03-RELACIÓN l-R:
+· Las gráficas muestran la resistencia (R), frente a la intensidad de corriente en el circuito (I). 
+· Si un elemento cumple la ley de Ohm los puntos experimentales se alinean en una recta horizontal (resistencia constante)
+· RESPONDER: La resistencia de la Lámpara no es constante, ¿es aproximadamente lineal su dependencia con la intensidad I?
+· REALIZAR: Si la respuesta a la pregunta anterior es SÍ,  realice un ajuste lineal de R frente a I en esa gráfica. 
+· COMENTAR los resultados.
+
+FIGURA04-RELACIÓN l-P:
+· Las gráficas muestran la potencia disipada (P), frente a la intensidad de corriente en el circuito (I). 
+· Si un elemento cumple la ley de Ohm los puntos experimentales se alinean en una parábola
+· REALIZAR un ajuste no-lineal (parabólico, de orden 2, o de orden 3) de P frente a I en esas gráficas.
+· RESPONDER: Cuál de los parámetros del ajuste se corresponde con la resistencia R
+· REALIZAR: A partir de ese ajuste y de la respuesta anterior, intente calcular de nuevo el valor de las Rs:
+	Resistencia óhmica (O):     R_O=( ???? +- ?????);
+	Lámpara de filamento(L):   R_L=( ???? +- ?????); 
+· COMENTAR los resultados.
+</content>
+</note>
+<note>
+RESULTADOS	26/10/2017 18:20:08
+geometry	0	0	514	237	
+WindowLabel		0
+AutoExec	0
+<content>
+
+</content>
+</note>
+<multiLayer>
+FIGURA01-RELACION-IV	2	1	26/10/2017 11:41:23
+geometry	0	0	514	437	
+WindowLabel		0
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	627	584
+Alignement	0	0
+<graph>
+ggeometry	1	2	243	362
+PlotTitle	RELACIÓN <i>I-V</i> PARA LA RESISTENCIA ÓHMICA	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Intensidad de Corriente <i>I</i> (μA)	Diferencia de potencial <i>V<sub>R</sub></i> (V)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	10	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_VR	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	12	1
+ErrorBars	1	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_VR	TABLA01-RESISTENCIA_uVR	1	8	#000000	1	1	1
+ErrorBars	0	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_VR	TABLA01-RESISTENCIA_uI	1	8	#000000	1	1	1
+ErrorBars	1	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_VR	TABLA01-RESISTENCIA_uVR	1	8	#000000	1	1	1
+ErrorBars	0	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_VR	TABLA01-RESISTENCIA_uI	1	8	#000000	1	1	1
+scale	0	0	14	1	7	1	0	0
+scale	1	0	14	1	8	5	0	0
+scale	2	0	14	1	7	1	0	0
+scale	3	0	12	1	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	2	5
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+<graph>
+ggeometry	246	2	246	362
+PlotTitle	RELACIÓN <i>I-V</i> PARA LA LÁMPARA DE FILAMENTO	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Intensidad de Corriente <i>I</i> (A)	                                                          			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	10	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA02-LAMPARA-FILAMENTO_I	TABLA02-LAMPARA-FILAMENTO_VR	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	13	1
+ErrorBars	1	TABLA02-LAMPARA-FILAMENTO_I	TABLA02-LAMPARA-FILAMENTO_VR	TABLA02-LAMPARA-FILAMENTO_uVR	1	8	#000000	1	1	1
+ErrorBars	0	TABLA02-LAMPARA-FILAMENTO_I	TABLA02-LAMPARA-FILAMENTO_VR	TABLA02-LAMPARA-FILAMENTO_uI	1	8	#000000	1	1	1
+scale	0	0	200	20	6	1	0	0
+scale	1	0	200	20	8	5	0	0
+scale	2	0.1	0.6	0.1	6	1	0	0
+scale	3	0	1	0.1	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+</multiLayer>
+<multiLayer>
+FIGURA02-LOGARITMOS	1	1	26/10/2017 12:20:44
+geometry	0	0	514	437	
+WindowLabel		0
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<graph>
+ggeometry	0	2	241	362
+PlotTitle	RELACIÓN log(<i>I</i>)--log(<i>V<sub>R</sub></i>) PARA LA RESISTENCIA ÓHMICA	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	logaritmo de la  intensidad de Corriente log(<i>I</i>)	logaritmo de la diferencia de potencial log(<i>V<sub>R</sub></i>)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	7	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA01-RESISTENCIA_logI	TABLA01-RESISTENCIA_logVR	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	12	1
+scale	0	-0.5	3	0.5	13	1	0	0
+scale	1	-0.5	3	0.5	8	5	0	0
+scale	2	-0.5	3	1	6	1	0	0
+scale	3	-1	3	1	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	2	5
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+<graph>
+ggeometry	247	2	243	362
+PlotTitle	RELACIÓN log(<i>I</i>)--log(<i>V<sub>R</sub></i>) PARA LA LÁMPARA DE FILAMENTO	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	logaritmo de la  intensidad de Corriente log(<i>I</i>)	                                                          			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	7	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA02-LAMPARA-FILAMENTO_logI	TABLA02-LAMPARA-FILAMENTO_logV	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	13	1
+scale	0	2	5.5	0.5	13	1	0	0
+scale	1	2	5.5	0.5	8	5	0	0
+scale	2	-2.2	-0.4	0.2	11	1	0	0
+scale	3	-2	0	0.2	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<text>	-0.561174551386623	3.97857142857143	MS Shell Dlg 2	4	50	0	0	0	#000000	0	0	#000000	255	</text>
+</graph>
+</multiLayer>
+<multiLayer>
+FIGURA04-RELACION-IP	1	1	26/10/2017 12:41:10
+geometry	0	0	514	437	
+WindowLabel		0
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<graph>
+ggeometry	6	2	244	362
+PlotTitle	RELACIÓN <i>I-P<sub>R</sub></i> PARA LA RESISTENCIA ÓHMICA	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Intensidad de Corriente <i>I</i> (μA)	POTENCIA DISIPADA <i>P<sub>R</sub></i> (μW)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	9	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_PR	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	9	1
+ErrorBars	1	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_PR	TABLA01-RESISTENCIA_uPR	1	8	#000000	1	1	1
+ErrorBars	0	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_PR	TABLA01-RESISTENCIA_uI	1	8	#000000	1	1	1
+scale	0	-20	180	10	13	1	0	0
+scale	1	-20	180	10	8	5	0	0
+scale	2	0	14	1	8	1	0	0
+scale	3	0	12	1	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	2	5
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+<graph>
+ggeometry	248	2	248	362
+PlotTitle	RELACIÓN <i>I-P<sub>R</sub></i> PARA LA LÁMPARA DE FILAMENTO	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Intensidad de Corriente <i>I</i> (A)	POTENCIA DISIPADA <i>P<sub>R</sub></i> (W)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	9	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA02-LAMPARA-FILAMENTO_I	TABLA02-LAMPARA-FILAMENTO_PR	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	9	1
+ErrorBars	1	TABLA02-LAMPARA-FILAMENTO_I	TABLA02-LAMPARA-FILAMENTO_PR	TABLA02-LAMPARA-FILAMENTO_uPR	1	8	#000000	1	1	1
+ErrorBars	0	TABLA02-LAMPARA-FILAMENTO_I	TABLA02-LAMPARA-FILAMENTO_PR	TABLA02-LAMPARA-FILAMENTO_uI	1	8	#000000	1	1	1
+scale	0	-20	100	20	6	1	0	0
+scale	1	-20	100	20	8	5	0	0
+scale	2	0.1	0.6	0.1	6	1	0	0
+scale	3	0	1	0.1	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+</multiLayer>
+<multiLayer>
+FIGURA03-RELACION-IR	1	1	27/10/2017 7:21:22
+geometry	0	0	514	445	
+WindowLabel		0
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<graph>
+ggeometry	12	2	243	373
+PlotTitle	RELACIÓN <i>I-R</i> PARA LA RESISTENCIA ÓHMICA	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Intensidad de Corriente <i>I</i> (μA)	RESISTENCIA <i>R</i> (MΩ)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	9	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_R	1	0	0	0	1	7	1	0	0	0	0	14	1	2	0	0	9	1
+ErrorBars	1	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_R	TABLA01-RESISTENCIA_uR	1	8	#000000	1	1	1
+ErrorBars	0	TABLA01-RESISTENCIA_I	TABLA01-RESISTENCIA_R	TABLA01-RESISTENCIA_uI	1	8	#000000	1	1	1
+scale	0	0.875	0.915	0.1	13	1	0	0
+scale	1	0.875	0.915	0.1	8	5	0	0
+scale	2	0	14	1	8	1	0	0
+scale	3	0	14	1	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	2	5
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+<graph>
+ggeometry	262	4	246	371
+PlotTitle	RELACIÓN <i>I-R</i> PARA LA LÁMPARA DE FILAMENTO	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	1	#000000
+grid	1	0	1	0	#000000	2	1	#a0a0a4	2	1	#000000	2	1	#a0a0a4	2	1	0	0	2	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Intensidad de Corriente <i>I</i> (A)	RESISTENCIA <i>R</i> (Ω)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+TitleFont	Book Antiqua	9	75	0	0	0
+ScaleFont0	Book Antiqua	8	75	0	0	0
+ScaleFont1	MS Shell Dlg 2	5	75	0	0	0
+ScaleFont2	Book Antiqua	8	75	0	0	0
+ScaleFont3	MS Shell Dlg 2	5	75	0	0	0
+AxisFont0	Book Antiqua	6	75	0	0	0
+AxisFont1	MS Shell Dlg 2	5	50	0	0	0
+AxisFont2	Book Antiqua	6	75	0	0	0
+AxisFont3	MS Shell Dlg 2	5	50	0	0	0
+EnabledTickLabels	1	0	1	0	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+scale	0	5	25	50	6	1	0	0
+scale	1	5	25	50	8	5	0	0
+scale	2	0.284	0.296	0.1	6	1	0	0
+scale	3	0	1	0.1	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3	
+MinorTicks	3	3	3	3	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+</graph>
+</multiLayer>
+<log>
+[26/10/2017 12:13:48	Plot: ''Graph1'']
+Linear Regression fit of dataset: TABLA01-RESISTENCIA_V, using function: A*x+B
+Y standard errors: Associated dataset (TABLA01-RESISTENCIA_u(V))
+From x = 1 to x = 13
+B (y-intercept) = 0 +/- 0,11766968108291
+A (slope) = 1 +/- 0,014824986333222
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[26/10/2017 18:16:30	Plot: ''FIGURA02-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA01-RESISTENCIA_logV, using function: A*x+B
+Y standard errors: Unknown
+From x = -0,186329578191493 to x = 2,3869262414278
+B (y-intercept) = -0,105237656526923 +/- 0,00142531734995573
+A (slope) = 1,0010777236826 +/- 0,000946542945501466
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6,3748384738983e-06
+R^2 = 0,999992847927105
+---------------------------------------------------------------------------------------
+[26/10/2017 18:16:53	Plot: ''FIGURA02-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA02-LAMPARA-FILAMENTO_logV, using function: A*x+B
+Y standard errors: Unknown
+From x = -1,83258146374831 to x = -0,198450938723838
+B (y-intercept) = 5,72325870388981 +/- 0,0357181724386274
+A (slope) = 1,62494774504644 +/- 0,0325791918148731
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,00246158019167352
+R^2 = 0,997194052545971
+---------------------------------------------------------------------------------------
+[26/10/2017 18:18:39	Plot: ''FIGURA01-RELACION-IV'']
+Linear Regression fit of dataset: TABLA02-LAMPARA-FILAMENTO_V, using function: A*x+B
+Y standard errors: Unknown
+From x = 0,16 to x = 0,82
+B (y-intercept) = -40,784071625022 +/- 4,36792372102568
+A (slope) = 294,300427175376 +/- 9,20452891733561
+--------------------------------------------------------------------------------------
+Chi^2/doF = 32,1741638313703
+R^2 = 0,993199266163702
+---------------------------------------------------------------------------------------
+[26/10/2017 18:18:59	Plot: ''FIGURA01-RELACION-IV'']
+Linear Regression fit of dataset: TABLA01-RESISTENCIA_V, using function: A*x+B
+Y standard errors: Unknown
+From x = 0,83 to x = 10,88
+B (y-intercept) = -0,00523675650805274 +/- 0,00249229563229961
+A (slope) = 0,9030723670252 +/- 0,00042537889444864
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2,10481478832376e-05
+R^2 = 0,999998225009695
+---------------------------------------------------------------------------------------
+[26/10/2017 18:28:04	Plot: ''FIGURA04-RELACION-IP'']
+Polynomial fit of dataset: TABLA02-LAMPARA-FILAMENTO_P, using function: a0+a1*x+a2*x^2
+Y standard errors: Unknown
+From x = 0,16 to x = 0,82
+a0  = 7,6290644936321 +/- 2,06000925343039
+a1  = -85,4710650436142 +/- 9,67964468083803
+a2  = 345,311106712994 +/- 9,84568027733867
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,46142233416429
+R^2 = 0,999648832268797
+---------------------------------------------------------------------------------------
+[26/10/2017 18:28:47	Plot: ''FIGURA04-RELACION-IP'']
+Polynomial fit of dataset: TABLA01-RESISTENCIA_P, using function: a0+a1*x+a2*x^2
+Y standard errors: Unknown
+From x = 0,83 to x = 10,88
+a0  = 0,0105610412102461 +/- 0,0211584970656679
+a1  = -0,0137512945513468 +/- 0,0100795798814652
+a2  = 0,903946356346656 +/- 0,000871962875994074
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,000540525602670872
+R^2 = 0,999999701327468
+---------------------------------------------------------------------------------------
+[27/10/2017 12:03:10	Gráfico: ''FIGURA01-RELACION-IV'']
+Regresión Lineal ajuste del conjunto de datos: TABLA02-LAMPARA-FILAMENTO_V, usando función : A*x+B
+errores estándar Y: Desconocido
+Desde x = 0,26 a x = 0,71
+B (y-intercección) = -53,1787932340318 +/- 2,69855297647948
+A (pendiente) = 353,799545569301 +/- 5,66605390472398
+--------------------------------------------------------------------------------------
+Chi^2 = 50,8658419591012
+R^2 = 0,997952392681667
+---------------------------------------------------------------------------------------
+[27/10/2017 12:06:35	Gráfico: ''FIGURA01-RELACION-IV'']
+Polinomial ajuste del conjunto de datos: TABLA02-LAMPARA-FILAMENTO_V, usando función : a0+a1*x+a2*x^2
+errores estándar Y: Desconocido
+Desde x = 0,26 a x = 0,71
+a0  = -30,1228212150469 +/- 4,13020026570085
+a1  = 247,375893914658 +/- 18,4239515969293
+a2  = 111,831721923368 +/- 19,1806913599906
+--------------------------------------------------------------------------------------
+Chi^2 = 8,68569572623032
+R^2 = 0,999650356831837
+---------------------------------------------------------------------------------------
+[27/10/2017 12:06:43	Gráfico: ''FIGURA01-RELACION-IV'']
+Polinomial ajuste del conjunto de datos: TABLA02-LAMPARA-FILAMENTO_V, usando función : a0+a1*x+a2*x^2
+errores estándar Y: Desconocido
+Desde x = 0,26 a x = 0,71
+a0  = -30,1228212150469 +/- 4,13020026570085
+a1  = 247,375893914658 +/- 18,4239515969293
+a2  = 111,831721923368 +/- 19,1806913599906
+--------------------------------------------------------------------------------------
+Chi^2 = 8,68569572623032
+R^2 = 0,999650356831837
+---------------------------------------------------------------------------------------
+[27/10/2017 12:09:35	Gráfico: ''FIGURA02-LOGARITMOS'']
+Regresión Lineal ajuste del conjunto de datos: TABLA02-LAMPARA-FILAMENTO_logV, usando función : A*x+B
+errores estándar Y: Desconocido
+Desde x = -1,34707364796661 a x = 0
+B (y-intercección) = 1,39867915198728 +/- 0,721401960729314
+A (pendiente) = -3,11612933088113 +/- 0,954181052582568
+--------------------------------------------------------------------------------------
+Chi^2 = 32,8059369739088
+R^2 = 0,47055418788064
+---------------------------------------------------------------------------------------
+[27/10/2017 12:10:19	Gráfico: ''FIGURA02-LOGARITMOS'']
+Regresión Lineal ajuste del conjunto de datos: TABLA02-LAMPARA-FILAMENTO_logV, usando función : A*x+B
+errores estándar Y: Desconocido
+Desde x = -1,34707364796661 a x = 0
+B (y-intercección) = 1,39867915198728 +/- 0,721401960729314
+A (pendiente) = -3,11612933088113 +/- 0,954181052582568
+--------------------------------------------------------------------------------------
+Chi^2 = 32,8059369739088
+R^2 = 0,47055418788064
+---------------------------------------------------------------------------------------
+[27/10/2017 12:24:32	Gráfico: ''FIGURA01-RELACION-IV'']
+Regresión Lineal ajuste del conjunto de datos: TABLA01-RESISTENCIA_V, usando función : A*x+B
+errores estándar Y: Desconocido
+Desde x = 0,69 a x = 11,82
+B (y-intercección) = -0,0173914390793948 +/- 0,00229761960952333
+A (pendiente) = 0,91115522251446 +/- 0,00031270131721457
+--------------------------------------------------------------------------------------
+Chi^2 = 0,000106401998246571
+R^2 = 0,999999057754089
+---------------------------------------------------------------------------------------
+[27/10/2017 12:24:55	Gráfico: ''FIGURA02-LOGARITMOS'']
+Regresión Lineal ajuste del conjunto de datos: TABLA01-RESISTENCIA_logV, usando función : A*x+B
+errores estándar Y: Desconocido
+Desde x = -0,371063681390832 a x = 0
+B (y-intercección) = 0 +/- 0
+A (pendiente) = 1,33210644588563 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[27/10/2017 12:29:53	Gráfico: ''FIGURA02-LOGARITMOS'']
+Regresión Lineal ajuste del conjunto de datos: TABLA02-LAMPARA-FILAMENTO_logV, usando función : A*x+B
+errores estándar Y: Desconocido
+Desde x = -1,34707364796661 a x = 0
+B (y-intercección) = 1,39867915198728 +/- 0,721401960729314
+A (pendiente) = -3,11612933088113 +/- 0,954181052582568
+--------------------------------------------------------------------------------------
+Chi^2 = 32,8059369739088
+R^2 = 0,47055418788064
+---------------------------------------------------------------------------------------
+[27/10/2017 12:30:25	Gráfico: ''FIGURA02-LOGARITMOS'']
+Regresión Lineal ajuste del conjunto de datos: TABLA02-LAMPARA-FILAMENTO_logV, usando función : A*x+B
+errores estándar Y: Desconocido
+Desde x = -1,34707364796661 a x = 0
+B (y-intercección) = 1,39867915198728 +/- 0,721401960729314
+A (pendiente) = -3,11612933088113 +/- 0,954181052582568
+--------------------------------------------------------------------------------------
+Chi^2 = 32,8059369739088
+R^2 = 0,47055418788064
+---------------------------------------------------------------------------------------
+[27/10/2017 12:31:05	Gráfico: ''FIGURA02-LOGARITMOS'']
+Regresión Lineal ajuste del conjunto de datos: TABLA01-RESISTENCIA_logV, usando función : A*x+B
+errores estándar Y: Desconocido
+Desde x = -0,371063681390832 a x = 0
+B (y-intercección) = 0 +/- 0
+A (pendiente) = 1,33210644588563 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[27/10/2017 12:32:30	Gráfico: ''FIGURA02-LOGARITMOS'']
+Regresión Lineal ajuste del conjunto de datos: TABLA01-RESISTENCIA_logV, usando función : A*x+B
+errores estándar Y: Desconocido
+Desde x = -0,371063681390832 a x = 2,46979301197795
+B (y-intercección) = -0,113242536515821 +/- 0,00254589594995398
+A (pendiente) = 1,00872134705768 +/- 0,00141741887657994
+--------------------------------------------------------------------------------------
+Chi^2 = 0,000120717265271553
+R^2 = 0,999984204363604
+---------------------------------------------------------------------------------------
+[09/11/2017 11:27:08	Plot: ''FIGURA02-LOGARITMOS'']
+Linear Regression fit of dataset: TABLA02-LAMPARA-FILAMENTO_logV, using function: A*x+B
+Y standard errors: Unknown
+From x = -1,34707364796661 to x = -0,342490308946776
+B (y-intercept) = 5,86334140373909 +/- 0,0148255668334152
+A (slope) = 1,55159150938597 +/- 0,0165729858346815
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,000275430541768834
+R^2 = 0,999088114082514
+---------------------------------------------------------------------------------------
+[09/11/2017 11:28:05	Plot: ''FIGURA04-RELACION-IP'']
+Polynomial fit of dataset: TABLA02-LAMPARA-FILAMENTO_PR, using function: a0+a1*x+a2*x^2
+Y standard errors: Unknown
+From x = 0,26 to x = 0,71
+a0  = 9,69495750342536 +/- 1,08334575915647
+a1  = -100,024895017179 +/- 4,83257676272762
+a2  = 405,027420223918 +/- 5,03106854529458
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,0853686720517677
+R^2 = 0,999964189845316
+---------------------------------------------------------------------------------------
+[09/11/2017 11:28:51	Plot: ''FIGURA04-RELACION-IP'']
+Polynomial fit of dataset: TABLA02-LAMPARA-FILAMENTO_PR, using function: a0+a1*x+a2*x^2
+Y standard errors: Unknown
+From x = 0,26 to x = 0,71
+a0  = 9,69495750342536 +/- 1,08334575915647
+a1  = -100,024895017179 +/- 4,83257676272762
+a2  = 405,027420223918 +/- 5,03106854529458
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,0853686720517677
+R^2 = 0,999964189845316
+---------------------------------------------------------------------------------------
+[09/11/2017 11:29:18	Plot: ''FIGURA04-RELACION-IP'']
+Polynomial fit of dataset: TABLA01-RESISTENCIA_PR, using function: a0+a1*x+a2*x^2
+Y standard errors: Unknown
+From x = 0,69 to x = 11,82
+a0  = -0,0016175331423796 +/- 0,0336947155350307
+a1  = -0,0161960671159523 +/- 0,0128536816588738
+a2  = 0,911044474547825 +/- 0,000996453380531481
+--------------------------------------------------------------------------------------
+Chi^2/doF = 0,00119895564982093
+R^2 = 0,999999552033288
+---------------------------------------------------------------------------------------
+</log>
