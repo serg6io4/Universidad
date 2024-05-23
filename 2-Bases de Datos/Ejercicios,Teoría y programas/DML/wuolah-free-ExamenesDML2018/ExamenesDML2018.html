@@ -1,0 +1,243 @@
+
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Sus datos</title>
+
+<link rel="stylesheet" href="./mi examen septiembre bases_files/menu1.css" type="text/css" media="screen">
+<link rel="stylesheet" href="./mi examen septiembre bases_files/comunes.css" type="text/css" media="screen">
+</head>
+<body>
+<dl id="artist">
+<dt>Alumnos</dt>
+<dd>
+<a class="xmenu" href="https://www.wuolah.com/perfil/Gultar">
+<span></span>
+<small>Mis datos</small>
+</a>
+</dd>
+</dl>
+<p class="textocabecera">
+<br>
+Zona de alumnos. 
+</p>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<center>
+<table border="1">
+<tbody><tr>
+<th>NOMBRE</th>
+<th>ASIGNATURA</th>
+<th>CONCEPTO</th>
+<th>ENUNCIADO</th>
+<th>RESPUESTA</th>
+<th>COMENTARIO</th>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota Prueba DDL Comp A 2017 (pregunta 1):     1.90 sobre   2.00</td>
+<td align="LEFT">https://www.wuolah.com/perfil/Gultar</td>
+<td align="LEFT"></td>
+<td align="LEFT"><a href="https://www.wuolah.com/perfil/Gultar"> Entrad a mi wuolah jeje</a></td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Febrero  (pregunta 1):     0.25 sobre   0.25</td>
+<td align="LEFT">Mostrar nombre, primer apellido y nombre de municipio de aquellos alumnos que viven en las provincias de Badajoz ó Córdoba.</td>
+<td align="LEFT">select a.nombre, a.apellido1, m.nombre from alumnos a ,provincia p , municipio m
+where (p.nombre = 'Badajoz' or p.nombre = 'Córdoba') and (a.cpro = p.codigo) and
+(a.cmun = m.cmun) and (m.cpro = a.cpro) and (m.cpro = p.codigo)</td>
+<td align="LEFT">Correcta</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Febrero  (pregunta 2):     0.00 sobre   0.50</td>
+<td align="LEFT">Para cada profesor (deben aparecer todos) mostrar id de profesor y número de tramos de investigación que tiene. En caso de no tener tramos  debe aparecer 0</td>
+<td align="LEFT">select all pr.id, inv.TRAMOS
+from profesores pr, investigadores inv
+where inv.ID_PROFESOR = pr.id</td>
+<td align="LEFT">Numero de filas distinto</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Febrero  (pregunta 3):     0.50 sobre   0.50</td>
+<td align="LEFT">Parejas de profesores que comparten teléfono. Si no tienen telefono se considera que el teléfono es el mismo y deben emparejarse también. De cada profesor solo queremos el Apellido1.  No muestre información duplicada.</td>
+<td align="LEFT">select p1.apellido1,p2.apellido1, p2.telefono
+from profesores p1, profesores p2
+where (p1.ID &gt; p2.ID and p1.telefono = p2.telefono) or (p1.ID &gt; p2.ID and p1.telefono is null and p2.telefono is null)</td>
+<td align="LEFT">Correcta</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Febrero  (pregunta 4):     0.50 sobre   0.50</td>
+<td align="LEFT">Listar dni y fecha de nacimiento de los tres alumnos de mayor edad que están registrados en el sistema y no están matriculados en ninguna asignatura. Los alumnos sin fecha de nacimiento no
+se tendrán en cuenta</td>
+<td align="LEFT">select *
+from(
+select al.dni, al.FECHA_NACIMIENTO
+from alumnos al
+where al.fecha_nacimiento is not null and al.dni not in(
+select alu.dni
+from alumnos alu,matricular ma
+where alu.dni = ma.alumno)
+order by al.fecha_nacimiento)
+where rownum&lt;4</td>
+<td align="LEFT">Correcta</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Febrero  (pregunta 5):     0.00 sobre   0.75</td>
+<td align="LEFT">Nombre completo de los profesores que han impartido la asignatura que más alumnos ha tenido matriculados, pero teniendo en cuenta solamente aquellas asignaturas con menos de 25 alumnos matriculados. Si un alumno se ha matriculado varias veces en la asignatura debe contarse sólo una vez.</td>
+<td align="LEFT">select distinct profs.nombre
+from profesores profs, matricular matric, impartir impar
+where profs.id=impar.PROFESOR and impar.ASIGNATURA=matric.ASIGNATURA and matric.asignatura =(
+select mat.asignatura
+from profesores pro, matricular mat,(
+select m.asignatura, count(*)
+from matricular m
+group by m.asignatura
+HAVING count(*)&lt;25
+order by count(*) desc
+)
+where rownum&lt;2 
+)</td>
+<td align="LEFT">Incorrecta</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Febrero  (pregunta 6):     0.00 sobre   0.75</td>
+<td align="LEFT">Queremos obtener la distribución en género de cada asignatura en cada curso académico (el de la tabla matricular). Obtenga el nombre de la asignatura, el curso académico, el número de alumnos y el número de alumnas matriculados</td>
+<td align="LEFT"></td>
+<td align="LEFT">No entregada</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Febrero  (pregunta 7):     0.00 sobre   0.75</td>
+<td align="LEFT">Queremos obtener cuántos alumnos se matricularon por primera vez (FECHA_PRIM_MATRICULA) en cada uno de los meses del año, pero solo de aquellos meses en los que haya más alumnos que la media</td>
+<td align="LEFT"></td>
+<td align="LEFT">No entregada</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota Test Comp A (pregunta 1):     1.47 sobre   2.00</td>
+<td align="LEFT">Test Comp A</td>
+<td align="LEFT"></td>
+<td align="LEFT"></td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota NOTA FINAL FEBRERO  COMP (pregunta 1):     suspensisimo XD</td>
+<td align="LEFT">NOTA FINAL COMP</td>
+<td align="LEFT"></td>
+<td align="LEFT">CALIFICACION SUSPENSO. PARA SEPTIEMBRE:  DML Febrero ;</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota TRABAJO ER COMPUTADORES (pregunta 1):     1.60 sobre   2.00</td>
+<td align="LEFT">TRABAJO ER COMPUTADORES</td>
+<td align="LEFT"></td>
+<td align="LEFT"></td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Septiembre 2018 (pregunta 1):     0.40 sobre   0.40</td>
+<td align="LEFT">Mostrar dni, fecha de nacimiento, nombre de provincia y nombre de municipio donde habitan los alumnos que se matricularon por primera vez hace más de 4 años y que nacieron en los meses de junio, julio o agosto.</td>
+<td align="LEFT">select A.DNI "dni", a.FECHA_NACIMIENTO "fecha de nacimiento", p.nombre "nombre de provincia", 
+m.nombre "nombre de municipio"
+ from municipio m, provincia p, alumnos a
+where m.cpro = a.cpro and m.cmun = a.cmun and p.codigo = a.cpro and 
+months_between(sysdate,a.FECHA_PRIM_MATRICULA)/12 &gt; 4 AND
+(SUBSTR(fecha_nacimiento,4,2) = 6 or SUBSTR(fecha_nacimiento,4,2) = 7 or 
+SUBSTR(fecha_nacimiento,4,2) = 8)</td>
+<td align="LEFT">Correcta</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Septiembre 2018 (pregunta 2):     0.00 sobre   0.40</td>
+<td align="LEFT">Queremos saber cuántas asignaturas pertenecen a cada materia. Se desea obtener un listado con el nombre de la materia y el número de asignaturas que la componen. Aquellas asignaturas que no tienen materia asignada deben aparecer como pertenecientes a la materia ‘Sin materia asignada’</td>
+<td align="LEFT">select decode(nvl(cod_materia,'999'),999,'Sin materia asignada',1,'Ingeniería del 
+Software',2,'Dispositivos hardware',3,'Complementos de formación',4,'Fundamentos de la 
+Informática')"Materia", count(codigo)"numero de asignaturas"
+from asignaturas
+group by cod_materia</td>
+<td align="LEFT">Error. No outer join. Fallaría si cambia el estado de la base de datos</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Septiembre 2018 (pregunta 3):     0.60 sobre   0.60</td>
+<td align="LEFT">Obtenga el nombre y dos apellidos de los alumnos a los que no le da clase ningún profesor cuyo nombre empieza por ‘M’</td>
+<td align="LEFT">select nombre, apellido1, apellido2 from alumnos where dni not in
+(select a.dni from matricular m, impartir i, profesores p, alumnos a where m.asignatura = 
+i.asignatura and
+m.curso = i.curso and m.grupo = i.grupo and m.alumno = a.dni and i.profesor = p.id and p.nombre 
+like 'M%')</td>
+<td align="LEFT">Correcta</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Septiembre 2018 (pregunta 4):     0.35 sobre   0.70</td>
+<td align="LEFT">Obtenga nombre y apellidos de parejas de alumnos que tengan apellidos parecidos, pero no iguales. Decimos que dos apellidos son parecidos si solo varían en la última letra. No muestre información duplicada. Use las funciones SUBSTR y LENGTH. La semejanza puede ser entre los primeros apellidos, o entre los segundos. Tenga cuidado con la prioridad de los operadores AND y OR</td>
+<td align="LEFT">select a1.nombre, a1.apellido1, a1.apellido2, a2.nombre, a2.apellido1, a2.apellido2
+from alumnos a1, alumnos a2 where a1.dni &lt; a2.dni and (SUBSTR(a1.apellido1,1,
+(length(a1.apellido1)-1)) = 
+SUBSTR(a2.apellido1,1,(length(a2.apellido1)-1)) or (SUBSTR(a1.apellido2,1,
+(length(a1.apellido2)-1)) = 
+SUBSTR(a2.apellido2,1,(length(a2.apellido2)-1))))</td>
+<td align="LEFT">Error. Apellidos mal</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Septiembre 2018 (pregunta 5):     0.90 sobre   0.90</td>
+<td align="LEFT">Obtenga un listado con el dni y la nota de expediente de los 5 alumnos con mejor expediente. Se calcula la nota de expediente haciendo la media de las calificaciones de las asignaturas que ha aprobado, donde AP vale 1, NT vale 2, SB vale 3 y MH vale 4. Muestre también el expediente redondeado a 2 decimales. Aquellos alumnos que han aprobado menos de 3 asignaturas no deben salir en el listado</td>
+<td align="LEFT">select * from(select alumno "dni", round(avg(decode(calificacion,'AP',1,'NT',2,'SB',3,'MH',4)),2) 
+"nota de expediente" 
+from matricular where calificacion != 'SP'
+group by alumno
+having count(*) &gt; 2
+order by round(avg(decode(calificacion,'AP',1,'NT',2,'SB',3,'MH',4)),2) DESC
+)
+where rownum &lt;= 5</td>
+<td align="LEFT">Correcta</td>
+</tr>
+<tr>
+<td align="LEFT">Gultar</td>
+<td align="LEFT">Grado Ingeniería de Computadores: Bases de Datos</td>
+<td align="LEFT">Nota DML Septiembre 2018 (pregunta 6):     0.00 sobre   1.00</td>
+<td align="LEFT">Obtenga cuantos alumnos distintos se han matriculado a lo largo de la historia por cada asignatura y grupo, pero sólo si en ella no hay matriculados alumnos que se hayan matriculado alguna vez en la asignatura ‘Dispositivos Electronicos’. Muestre el nombre de la asignatura, el grupo y el número de alumnos.</td>
+<td align="LEFT">select a.nombre "nombre de la asignatura", m.grupo "grupo", count(*) "número de alumnos" from 
+matricular m, asignaturas a 
+where m.asignatura = a.codigo and m.alumno not in (select m.alumno from matricular m, asignaturas 
+a 
+where m.asignatura = a.codigo and a.nombre = 'Dispositivos Electronicos')
+group by a.nombre, m.grupo</td>
+<td align="LEFT">Numero de filas distinto</td>
+</tr>
+</tbody></table>
+</center>
+<br>
+<br>
+<br>
+<hr>
+ Administrado por <a class="abajo" href="https://www.wuolah.com/perfil/Gultar">Manuel Enciso</a>. Dpto. Lenguajes y Ciencias de la Computación 
+
+
+</body></html>

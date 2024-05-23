@@ -1,0 +1,60 @@
+1. ¿Qué hace falta para acceder a un dato en concreto de una base de datos? 
+
+Nombre de la tabla, nombre de la columna y valor de la clave primaria. Regla 2
+
+2. ¿Se podría acceder a un dato concreto de una tabla que no tuviera definida ninguna clave?
+
+No, para encontrar un valor concreto se requiere una clave primaria, el nombre de la tabla y el nombre de la columna. Regla 2
+
+3. Si estamos utilizando una base de datos de alta disponibilidad (clúster) con réplicas de la información, ¿debe el usuario especificar cuál de las réplicas utiliza? 
+
+ El usuario no se da cuenta de que pueden existir copias (réplicas) de una misma relación en diferentes lugares. Regla 11
+
+4. ¿En qué tipo de estructura se almacena toda la información de una base de datos? ¿Y los metadatos?  
+
+Los datos de las columnas deben estar almacenados en tablas dentro de las bases de datos,los metadatos se representan y se manipulan exactamente igual que los datos de usuario, pudiéndose usar el mismo lenguaje. Regla 1
+
+5. ¿Qué es la lógica trivaluada? ¿es lo mismo la cadena vacía que el valor nulo? 
+
+La lógica trivaluada es un solución basadas en tres valores, Verdadero, Falso y Desconocido (null); Los valores nulos (que son distintos de la cadena vacía, blancos, 0). Regla 3
+
+6. ¿supongamos que un RDBMS utiliza SQL para consultar datos? ¿Qué lenguaje se utiliza para consultar el tipo de un dato? 
+
+Se debe disponer de un lenguaje relacional con las mismas (o más) funciones que las interfaces, por lo tanto se puede utilizar SQL. Regla 5
+
+7. El lenguaje que se utiliza para interrogar la base de datos ¿tiene sintaxis lineal o basada en bloques? ¿qué significa? 
+
+Un sistema relacional debe tener una sintaxis lineal, esto quiere decir, cada nueva orden, especificación y restricción, etc; se escribe en una línea distinta. Regla 5
+
+8. ¿Se puede utilizar el mismo lenguaje para obtener un dato de una base de datos y para definir una restricción? Ponga un ejemplo de restricción.
+
+El lenguaje soporta operaciones de definición de datos, de manipulación de datos, seguridad e integridad y operaciones de administración de transacciones, un ejermplo de restricción sería realizar añadir una restricción(ADD CONSTRAINT) a una tabla.Regla 5
+
+9. Imagina que tengo una tabla con todos los alumnos de la UMA. Ahora defino una vista con todos los alumnos que están matriculados en la ETSI Informática. ¿Es posible insertar un nuevo alumno en la vista o hay que hacerlo en la tabla? ¿Dónde se almacenará finalmente el alumno, en la vista o en la tabla? 
+
+Todas las vistas que son teóricamente actualizables, deben ser actualizables por el sistema mismo y la actualización debe de ser automática, sin necesidad de que el usuario tenga que estar actualizando manualmente, de manera que el SGBD deberá almacenarlo en a tabla.Regla 6
+
+10. ¿Es posible modificar el nivel físico de la base de datos sin que afecte al nivel lógico? Pon un ejemplo. 
+
+Los programas de aplicación y actividades del terminal permanecen inalterados a nivel lógico cualesquiera sean los cambios efectuados, tanto en la representación del almacenamiento, como en los métodos de acceso. Regla 8
+
+11. ¿Es posible leer varios datos de una base de datos relacional con una sola instrucción? ¿Ocurre lo mismo con el borrado, inserción y modificación? 
+
+La capacidad de manejar una relación base o derivada como un solo operando se aplica no sólo a la recuperación de los datos (consultas), sino también a la inserción, actualización y borrado de datos.Regla 7
+
+12. ¿Es posible modificar el nivel lógico de la base de datos sin que afecte a nivel externo? ¿Se puede añadir un atributo a una tabla de una base de datos sin que afecte a los programas que acceden a ella? 
+
+La independencia lógica de los datos especifica que los programas de aplicación y las actividades de terminal deben ser independientes de la estructura lógica, por lo tanto los cambios en la estructura lógica no deben alterar o modificar estos programas de aplicación, Cuando se modifica el esquema lógico preservando información (no valdría por ejemplo, eliminar un atributo) no es necesario modificar nada en niveles superiores.
+Regla 9
+
+13. Las restricciones ¿se establecen en los programas que acceden a la base de datos o en la propia base de datos? 
+
+Todas las restricciones de integridad deben ser definibles en los datos, y almacenables en el catálogo, no en el programa de aplicación. Regla 10
+
+14. ¿Es posible tener bases de datos relacionales distribuidas entre varios servidores? ¿se utilizará el mismo lenguaje para acceder a los datos o se tendrá que utilizar otro lenguaje para acceder a las bases de datos distribuidas? El programador una aplicación que accede a la base de datos ¿tiene que conocer cómo es esa distribución o se encarga la propia base de datos? 
+
+Una base de datos relacional tiene independencia de distribución. Las mismas órdenes y programas se ejecutan igual en una BD centralizada que en una distribuida. estas bases de datos funcionan como una sola, por lo tanto el programador no necesita conocer su distribucción.Regla 11 
+
+15. Una vez que se ha definido una restricción sobre la base de datos ¿es posible saltarse la restricción? ¿Y si se hace mediante programación o accediendo al nivel físico?
+
+Si un sistema relacional tiene un lenguaje de bajo nivel (un registro de cada vez), ese bajo nivel no puede ser usado para saltarse (subvertir) las reglas de integridad y los limitantes expresados en los lenguajes relacionales de más alto nivel (una relación (conjunto de registros) de cada vez).Algunos productos solamente construyen una interfaz relacional para sus bases de datos No relacionales, lo que hace posible la subversión (violación) de las restricciones de integridad. Esto no debe ser permitido. Regla 12

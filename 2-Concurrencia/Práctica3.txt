@@ -1,0 +1,114 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void decrypt(unsigned int* v, unsigned int* k) {
+	unsigned int v0 = v[0], v1 = v[1], sum = 0xC6EF3720, i; /* set up */
+	unsigned int delta = 0x9e3779b9; /* a key schedule constant */
+	unsigned int k0 = k[0], k1 = k[1], k2 = k[2], k3 = k[3]; /* cache key */
+	for (i = 0; i < 32; i++) { /* basic cycle start */
+		v1 -= (v0 << 4) + k2 ^ v0 + sum ^ (v0 >> 5) + k3;
+		v0 -= (v1 << 4) + k0 ^ v1 + sum ^ (v1 >> 5) + k1;
+		sum -= delta; /* end cycle */
+	}
+	v[0] = v0;
+	v[1] = v1;
+}
+
+int main(int argc, char *argv[]) {
+	FILE *fent, *fsal;
+	unsigned int lSize, lSize2;
+	char tmp[8], *buf, *buf2;
+	unsigned int v[2], k[4];
+	size_t leidos;
+	int i, veces;
+	char entrada[50];
+	char salida[50];
+
+	/*printf("sizeof(unsigned long): %d",sizeof(unsigned long));*/
+	fflush(stdout);
+
+	printf("Introduce el nombre del fichero de ENTRADA:\n");
+	fflush(stdout);
+	scanf("%s", entrada);
+	fflush(stdin);
+
+	printf("Introduce el nombre del fichero de SALIDA:\n");
+	fflush(stdout);
+	scanf("%s", salida);
+	fflush(stdin);
+
+	if ((fent = fopen(entrada, "rb")) == NULL) {
+		printf("Error leyendo fichero\n");
+		fflush(stdout);
+		exit(-1);
+	}
+
+	if ((fsal = fopen(salida, "wb")) == NULL) {
+		printf("Error creando fichero\n");
+		fflush(stdout);
+		fclose(fent);
+		exit(-1);
+	}
+
+	/* Clave */
+	k[0] = 128;
+	k[1] = 129;
+	k[2] = 130;
+	k[3] = 131;
+
+	/* Obtiene tama�o del fichero original */
+	fread((void *) &lSize, sizeof(unsigned int), 1, fent);
+
+	/* Asigna memoria */
+	/* Cuidado, hay 0's extras al final del fichero hasta alcanzar un m�ltiplo de 8. Tambi�n hay que leerlos */
+
+	if (lSize % 8)
+		lSize2 = lSize + (8 - (lSize % 8));
+	else
+		lSize2 = lSize;
+
+	printf("%d, %d\n", lSize, lSize2);
+	buf = (char *) malloc(sizeof(char) * (lSize2));
+	if (buf == NULL) {
+		printf("Error memoria insuficiente\n");
+		fflush(stdout);
+		fclose(fent);
+		fclose(fsal);
+		exit(-1);
+	}
+
+	/* Lectura en memoria */
+	leidos = fread((void *) buf, sizeof(char), lSize2, fent);
+	if (leidos != lSize2) {
+		printf("Error en lectura de fichero\n");
+		fflush(stdout);
+		fclose(fent);
+		fclose(fsal);
+		exit(-1);
+	}
+
+	fclose(fent);
+
+	/* Desencriptado en memoria */
+	veces = lSize / 8; /* Calcula numero de iteraciones */
+	buf2 = buf;
+	for (i = 0; i < veces; i++) {
+		memcpy((void *) v, (void *) buf2, 8);
+		decrypt(v, k);
+		buf2 += 8;
+		fwrite((void *) v, sizeof(char), 8, fsal);
+	}
+
+	if (lSize % 8) {
+		/* Una iteracion extra para el ultimo bloque */
+		memcpy((void *) v, (void *) buf2, 8);
+		decrypt(v, k);
+		fwrite((void *) v, sizeof(char), lSize % 8, fsal);
+	}
+
+	free((void *) buf);
+	fclose(fsal);
+
+	return EXIT_SUCCESS;
+}
