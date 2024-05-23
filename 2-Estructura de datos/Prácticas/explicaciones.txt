@@ -1,0 +1,10 @@
+Para compilar en haskell, primero es necesario que pongamos un terminal.
+Luego elegir el terminal de prompt que es el terminal normal.
+Luego ponemos ghci y enter
+Luego :l "nombre del archivo".hs y enter
+Empieza a probar la wea.
+
+Cuando no detecte lo de DataEstructures...
+poner <prelude>:set -i../..
+y se irá al padre de las carpetas y ya lo pillará todo 
+a partir de ahí solo tienes que volver a recargar el archivo.
