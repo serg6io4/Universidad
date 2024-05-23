@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Mala_Postura">
+			<state id="SI" />
+			<state id="NO" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Movimientos_repititivos">
+			<state id="SI" />
+			<state id="NO" />
+			<probabilities>0.7 0.3</probabilities>
+		</cpt>
+		<cpt id="Deporte">
+			<state id="SI" />
+			<state id="NO" />
+			<probabilities>0.4 0.6</probabilities>
+		</cpt>
+		<cpt id="Contractura">
+			<state id="SI" />
+			<state id="NO" />
+			<parents>Mala_Postura Movimientos_repititivos</parents>
+			<probabilities>0.9 0.09999999999999998 0.3 0.7 0.4 0.6 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Inflamacion">
+			<state id="SI" />
+			<state id="NO" />
+			<parents>Deporte Contractura</parents>
+			<probabilities>0.8 0.2 0.6 0.4000000000000001 0.5 0.5 0.2 0.8000000000000002</probabilities>
+		</cpt>
+		<cpt id="Lesi_n">
+			<state id="LEVE" />
+			<state id="GRAVE" />
+			<state id="AGUDA" />
+			<parents>Contractura</parents>
+			<probabilities>0.7 0.2 0.1 0.3 0.4 0.3</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.4.4601.0 ACADEMIC" name="Network1" faultnameformat="nodestate">
+			<node id="Mala_Postura">
+				<name>Mala Postura</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>400 111 475 157</position>
+				<barchart active="true" />
+			</node>
+			<node id="Movimientos_repititivos">
+				<name>Movimientos repititivos</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>565 108 648 159</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Deporte">
+				<name>Deporte</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>270 251 324 284</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Contractura">
+				<name>Contractura</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>485 214 583 257</position>
+				<barchart active="true" />
+			</node>
+			<node id="Inflamacion">
+				<name>Inflamación</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>365 393 461 423</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Lesi_n">
+				<name>Lesión</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>667 364 716 394</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

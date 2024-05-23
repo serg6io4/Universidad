@@ -1,0 +1,71 @@
+Engine: Sistema_Control_Difuso_Iluminación
+InputVariable: Sensor_Luz_Exterior
+  enabled: true
+  range: 0.000 250.000
+  term: Baja Ramp 125.000 0.000
+  term: Media Triangle 0.000 125.000 250.000
+  term: Alta Ramp 125.000 250.000
+InputVariable: Sensor_Luz_Interior
+  enabled: true
+  range: 0.000 250.000
+  term: Muy_Baja Ramp 60.000 0.000
+  term: Baja Triangle 0.000 60.000 125.000
+  term: Media Triangle 60.000 125.000 190.000
+  term: Alta Triangle 125.000 190.000 250.000
+  term: Muy_Alta Ramp 190.000 250.000
+InputVariable: Condicion_visual
+  enabled: true
+  range: 0.000 10.000
+  term: Baja Triangle 0.000 2.500 4.500
+  term: Media Discrete 4.000 0.000 7.500 1.000 10.000 1.000
+InputVariable: Intensidad_iluminacion
+  enabled: true
+  range: 0.000 250.000
+  term: Baja Trapezoid 10.000 60.000 70.000 120.000
+  term: Media Trapezoid 70.000 120.000 130.000 190.000
+  term: Alta Trapezoid 130.000 190.000 198.000 250.000
+OutputVariable: Intensidad_Iluminacion
+  enabled: true
+  range: 0.000 250.000
+  accumulation: Maximum
+  defuzzifier: SmallestOfMaximum 200
+  default: nan
+  lock-valid: false
+  lock-range: false
+  term: Baja Trapezoid 10.000 60.000 70.000 120.000
+  term: Media Trapezoid 70.000 120.000 130.000 190.000
+  term: Alta Trapezoid 130.000 190.000 198.000 250.000
+OutputVariable: Vida_Util
+  enabled: true
+  range: 0.000 10.000
+  accumulation: Maximum
+  defuzzifier: SmallestOfMaximum 200
+  default: nan
+  lock-valid: false
+  lock-range: false
+  term: Baja Triangle 0.000 2.000 4.000
+  term: Media Triangle 3.000 5.000 7.000
+  term: Alta Triangle 6.000 8.000 10.000
+RuleBlock: 
+  enabled: true
+  conjunction: Minimum
+  disjunction: Maximum
+  activation: Minimum
+  rule: if ((Sensor_Luz_Exterior is Baja and Sensor_Luz_Interior is Muy_Baja) or Condicion_visual is very Baja) then Intensidad_Iluminacion is Alta
+  rule: if ((Sensor_Luz_Exterior is Baja and Sensor_Luz_Interior is Baja) or Condicion_visual is Baja) then Intensidad_Iluminacion is Alta
+  rule: if ((Sensor_Luz_Exterior is Baja and Sensor_Luz_Interior is Media) or Condicion_visual is Baja) then Intensidad_Iluminacion is Alta
+  rule: if ((Sensor_Luz_Exterior is Baja and Sensor_Luz_Interior is Alta) or Condicion_visual is Media) then Intensidad_Iluminacion is Alta
+  rule: if ((Sensor_Luz_Exterior is Baja and Sensor_Luz_Interior is Muy_Alta) or Condicion_visual is Media) then Intensidad_Iluminacion is Media
+  rule: if (Sensor_Luz_Exterior is Media and Sensor_Luz_Interior is Muy_Baja) then Intensidad_Iluminacion is Alta
+  rule: if (Sensor_Luz_Exterior is Media and Sensor_Luz_Interior is Baja) then Intensidad_Iluminacion is Media
+  rule: if (Sensor_Luz_Exterior is Media and Sensor_Luz_Interior is Media) then Intensidad_Iluminacion is Media
+  rule: if (Sensor_Luz_Exterior is Media and Sensor_Luz_Interior is Alta) then Intensidad_Iluminacion is Media
+  rule: if (Sensor_Luz_Exterior is Media and Sensor_Luz_Interior is Muy_Alta) then Intensidad_Iluminacion is Baja
+  rule: if (Sensor_Luz_Exterior is Alta and Sensor_Luz_Interior is Muy_Baja) then Intensidad_Iluminacion is Media
+  rule: if (Sensor_Luz_Exterior is Alta and Sensor_Luz_Interior is Baja) then Intensidad_Iluminacion is Baja
+  rule: if (Sensor_Luz_Exterior is Alta and Sensor_Luz_Interior is Media) then Intensidad_Iluminacion is Baja
+  rule: if (Sensor_Luz_Exterior is Alta and Sensor_Luz_Interior is Alta) then Intensidad_Iluminacion is Baja
+  rule: if (Sensor_Luz_Exterior is Alta and Sensor_Luz_Interior is Muy_Alta) then Intensidad_Iluminacion is Baja
+  rule: if Intensidad_iluminacion is Baja then Vida_Util is Alta
+  rule: if Intensidad_iluminacion is Media then Vida_Util is Alta
+  rule: if Intensidad_iluminacion is Alta then Vida_Util is Media
